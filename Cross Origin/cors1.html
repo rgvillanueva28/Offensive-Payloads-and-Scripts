@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+var url = "https://cors-sandbox/code";
+
+function get_code() {
+  fetch(url, {
+    method: 'GET',
+    mode: 'cors',
+    credentials: 'include'
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  });
+}
+
+get_code();
+</script>
+</head>
+<body></body>
+</html>

