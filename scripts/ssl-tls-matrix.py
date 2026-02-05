@@ -20,7 +20,8 @@ def parse_nmap_matrix(xml_file, csv_file=None):
         print(f"Error reading XML: {e}")
         return
 
-    headers = ['IP', 'Port', 'Max Protocol', 'SWEET32', 'Bar Mitzvah', 'POODLE']
+    # Updated headers to include support protocols
+    headers = ['IP', 'Port', 'Max Protocol', 'SSLv3', 'TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'SWEET32', 'Bar Mitzvah', 'POODLE']
     rows = []
 
     for host in root.findall('host'):
@@ -37,13 +38,19 @@ def parse_nmap_matrix(xml_file, csv_file=None):
             current_max_weight = -1
 
             for proto_table in script.findall('table'):
-                proto_name = proto_table.get('key')
+                proto_name = proto_table.get('key').replace(" ", "")
                 
+                # Check Protocol Support
+                if proto_name in headers:
+                    port_data[proto_name] = "YES"
+                
+                # Update Max Protocol
                 weight = get_protocol_weight(proto_name)
                 if weight > current_max_weight:
                     current_max_weight = weight
                     port_data['Max Protocol'] = proto_name
 
+                # Scan Warnings
                 warn_table = proto_table.find('table[@key="warnings"]')
                 if warn_table is not None:
                     for warning in warn_table.findall('elem'):

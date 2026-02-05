@@ -1,28 +1,29 @@
-# SSL/TLS Matrix Nmap Parser
+# SSL/TLS Matrix Parser
 
-A lightweight Python utility to convert complex Nmap `ssl-enum-ciphers` XML output into a clean, actionable compliance matrix. This tool identifies the highest supported protocol and flags specific cryptographic vulnerabilities based on official Nmap warning strings.
+A lightweight Python utility to convert complex Nmap `ssl-enum-ciphers` XML output into a clean, actionable compliance matrix. This tool helps auditors quickly identify which protocols are enabled and which specific vulnerabilities are present across a network.
 
 ## Features
-* **Max Protocol Identification:** Automatically determines the strongest available protocol (e.g., TLSv1.2, TLSv1.3).
-* **Vulnerability Mapping:** Specifically scans for SWEET32, Bar Mitzvah (RC4), and POODLE.
-* **Terminal Formatting:** Perfectly aligned columns in the terminal, even with color highlighting.
-* **CSV Export:** Generate spreadsheet-ready reports for audits.
+* **Protocol Support Matrix:** Tracks individual support for SSLv3, TLSv1.0, TLSv1.1, and TLSv1.2.
+* **Max Protocol Identification:** Automatically determines the strongest available protocol version.
+* **Vulnerability Mapping:** Specifically scans for SWEET32, Bar Mitzvah (RC4), and POODLE based on official Nmap warning strings.
+* **Terminal Formatting:** Perfectly aligned columns in the terminal with color-coded "YES" flags for rapid risk assessment.
+* **CSV Export:** Generate spreadsheet-ready reports via the `-o` flag.
 
 ## Extracted Columns
 
-| Column Title | Nmap Detection / Logic |
+| Column Title | Detection / Logic |
 | :--- | :--- |
-| **IP** | Target IP address. |
-| **Port** | Target port number. |
-| **Max Protocol** | Highest negotiated protocol version. |
-| **SWEET32** | Found: `64-bit block cipher 3DES vulnerable to SWEET32 attack` |
-| **Bar Mitzvah** | Found: `Broken cipher RC4 is deprecated by RFC 7465` |
-| **POODLE** | Found: `CBC-mode cipher in SSLv3 (CVE-2014-3566)` |
+| **IP / Port** | Target identification. |
+| **Max Protocol** | The highest protocol version successfully negotiated. |
+| **SSLv3 to TLSv1.2** | Boolean (YES/No) support for each specific protocol version. |
+| **SWEET32** | Found warning: `64-bit block cipher 3DES vulnerable to SWEET32 attack`. |
+| **Bar Mitzvah** | Found warning: `Broken cipher RC4 is deprecated by RFC 7465`. |
+| **POODLE** | Found warning: `CBC-mode cipher in SSLv3 (CVE-2014-3566)`. |
 
 ## Usage
 
 ### 1. Generate Nmap XML
-Run your scan and ensure you use the `-oX` flag:
+Run your scan and ensure you use the `-oX` flag to create the required XML input:
 ```bash
 nmap -p 443,1433,3389 --script ssl-enum-ciphers -oX scan_results.xml <target>
 
@@ -46,9 +47,11 @@ python3 ssl-tls-matrix.py scan_results.xml -o audit_report.csv
 
 ## Example Output
 
-| IP | Port | Max Protocol | SWEET32 | Bar Mitzvah | POODLE |
-| --- | --- | --- | --- | --- | --- |
-| 111.123.18.15 | 1433 | TLSv1.0 | YES | YES | YES |
-| 111.123.18.15 | 3389 | TLSv1.2 | YES | YES | No |
+The script ensures that even with ANSI colors enabled, the columns remain strictly aligned.
+
+| IP | Port | Max Protocol | SSLv3 | TLSv1.0 | TLSv1.1 | TLSv1.2 | SWEET32 | Bar Mitzvah | POODLE |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 111.123.18.15 | 1433 | TLSv1.0 | YES | YES | No | No | YES | YES | YES |
+| 111.123.18.15 | 3389 | TLSv1.2 | No | YES | YES | YES | YES | YES | No |
 
 ---
