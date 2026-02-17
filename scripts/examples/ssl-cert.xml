@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Mon Feb  9 23:31:48 2026 as: /usr/lib/nmap/nmap -&#45;privileged -iL ssl-cert -&#45;script ssl-cert -p1433,3389,7777 -oA ssl-cert -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -iL ssl-cert -&#45;script ssl-cert -p1433,3389,7777 -oA ssl-cert" start="1770697908" startstr="Mon Feb  9 23:31:48 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="1433,3389,7777"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.8.15" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.9.40" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.65.10.32" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.65.10.22" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.65.10.42" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.65.10.33" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.65.10.30" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.65.10.19" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.65.10.20" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.9.44" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.9.170" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.9.175" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.8.244" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.8.243" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.9.177" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.9.13" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.9.174" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="155.120.8.49" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.65.10.96" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.65.10.87" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="125"/>
+<address addr="10.65.10.19" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="closed" reason="reset" reason_ttl="125"/><service name="ms-sql-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKINTRANET_APP.TEST.COM.PH&#xa;Issuer: commonName=IDKINTRANET_APP.TEST.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-01-12T16:00:01&#xa;Not valid after:  2026-07-14T16:00:01&#xa;MD5:     9756 dbd3 f6d0 24fb 914d 136a bdd2 3f6a&#xa;SHA-1:   d652 fe0d ea2c 7149 9510 9be0 f0e9 d9a4 b499 0387&#xa;SHA-256: 3bfe 3aa7 482b 16fa 9b5d 9431 8067 f83f d2fe b8b6 a911 5b8b bd75 7002 02c9 28fc"><table key="subject">
+<elem key="commonName">\x00U\x00S\x00B\x00I\x00N\x00T\x00R\x00A\x00N\x00E\x00T\x00_\x00A\x00P\x00P\x00.\x00U\x00S\x00B\x000\x008\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00U\x00S\x00B\x00I\x00N\x00T\x00R\x00A\x00N\x00E\x00T\x00_\x00A\x00P\x00P\x00.\x00U\x00S\x00B\x000\x008\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">D05056EC8371979FA5596272A86069B609E1A8923C1BD6F028955450AC06E0549CE90F1607DB1AA4C66AD869A6DDE074149D9853A8D0A38F1A69304968BD526FF518E10E7B1C3E1CB949360C3BEA87EA812737A384913A76A8648E6482FA3CCECC0823265CBDBD3F65026796C98D7CE320DAF3516DBB81AAE93C46E3151779F6D22C386AAC4D08C3F1EFF21E6813F5ACE7E5E1558BC5235DA5FD03AA3D734BFC422D45F468CD0FF4B29F4B8DA64841AAA8D9E5B437858D47D18A4721AE092266D4B965FDE6ED0EC0EFD12986D314290ADAF71DBFE4E5AB085238D574D684EA366C29BF4531CD532E37A2D260375291118596F793D4919ABE1211782B77D2FE49</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-01-12T16:00:01</elem>
+<elem key="notAfter">2026-07-14T16:00:01</elem>
+</table>
+<elem key="md5">9756dbd3f6d024fb914d136abdd23f6a</elem>
+<elem key="sha1">d652fe0dea2c714995109be0f0e9d9a4b4990387</elem>
+<elem key="sha256">3bfe3aa7482b16fa9b5d94318067f83fd2feb8b6a9115b8bbd75700202c928fc</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDNDCCAhygAwIBAgIQTjLlSB9lDL1Ia4VnDbno2zANBgkqhkiG9w0BAQsFADBD&#xa;MUEwPwYDVQQDHjgAVQBTAEIASQBOAFQAUgBBAE4ARQBUAF8AQQBQAFAALgBVAFMA&#xa;QgAwADgALgBDAE8ATQAuAFAASDAeFw0yNjAxMTIxNjAwMDFaFw0yNjA3MTQxNjAw&#xa;MDFaMEMxQTA/BgNVBAMeOABVAFMAQgBJAE4AVABSAEEATgBFAFQAXwBBAFAAUAAu&#xa;AFUAUwBCADAAOAAuAEMATwBNAC4AUABIMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A&#xa;MIIBCgKCAQEA0FBW7INxl5+lWWJyqGBptgnhqJI8G9bwKJVUUKwG4FSc6Q8WB9sa&#xa;pMZq2Gmm3eB0FJ2YU6jQo48aaTBJaL1Sb/UY4Q57HD4cuUk2DDvqh+qBJzejhJE6&#xa;dqhkjmSC+jzOzAgjJly9vT9lAmeWyY184yDa81Ftu4Gq6TxG4xUXefbSLDhqrE0I&#xa;w/Hv8h5oE/Ws5+XhVYvFI12l/QOqPXNL/EItRfRozQ/0sp9LjaZIQaqo2eW0N4WN&#xa;R9GKRyGuCSJm1Lll/ebtDsDv0SmG0xQpCtr3Hb/k5asIUjjVdNaE6jZsKb9FMc1T&#xa;Ljei0mA3UpERhZb3k9SRmr4SEXgrd9L+SQIDAQABoyQwIjATBgNVHSUEDDAKBggr&#xa;BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAFULFqKmZ0bL&#xa;ATEPysA0dpScHogqsH5XSgpftT3llKJFw3CN2EjfgYLXxHZ4ftjPOw+F8XjUZMUY&#xa;JeWlrZ0rDARPxu86/IVZDMgb5puunVJdbsC7l8Xebo0P4FwUNkJvJn56/PmOM389&#xa;pEo1ySdsDabAGCR8sOM8Yv8qmcjLrVPGWkT3JnVNGBUq6J1Q6GQgXHI/Cy2oGszN&#xa;VHiJZ6MyWwQFuwgH/iY/USJPPvIu5aksFLH+PIWmHzcRB480h8Bdihw1asLldMah&#xa;zKlkzXl/Mh9fiSAM5XeyIpIZkcGFIHC9hmAyp6SJK9n4RmKWgFXEED+JyrTXN/uP&#xa;9INLuYViNG4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="closed" reason="reset" reason_ttl="125"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="2774" rttvar="3060" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="125"/>
+<address addr="10.65.10.20" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-14T00:26:28&#xa;Not valid after:  2054-10-14T00:26:28&#xa;MD5:     a902 f417 2d3f e298 8334 9d6d 99b9 664b&#xa;SHA-1:   b2a0 d90a 5e98 ce95 3069 47ef 2bf0 dcfb e07d 8112&#xa;SHA-256: f32f 55ca 60b9 3881 e2a5 d001 e757 f344 761b bd0e a790 fcb2 1a34 c26a 6605 80cb"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">9F19180AF90698955C4B0C542B3B93E2B101A4AB2B99AA1946F7A83E5BA78B3DB885822EB6FEEAD1CCCDA074691BF5DEFAF59BE75B3E93263DA6FC8710C61FD6B9F79E5A2017D1C6FC1E44A6C679AD75282A1D9FECC26E7170C8F3E8140CED925C9A56BEF86265209829240E56E2876183958586DEA7807E47169749CCDF3093CFC32C5EB7039D391EBCB0F4AC04375CC28FC2DF9FA8611448753313BDB0CC763B6B86782F04C2C678555A56C7041343E59215FA58825D639262499F99742622301557C74790579D0448765B077C46BF2AE743E1AF8535A8C7493D8B8F4D2B97516CCC4E1DCB1FB015050F2F8EE41A69D023CBC4D9C69F8887425C0909C334F3</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-14T00:26:28</elem>
+<elem key="notAfter">2054-10-14T00:26:28</elem>
+</table>
+<elem key="md5">a902f4172d3fe29883349d6d99b9664b</elem>
+<elem key="sha1">b2a0d90a5e98ce95306947ef2bf0dcfbe07d8112</elem>
+<elem key="sha256">f32f55ca60b93881e2a5d001e757f344761bbd0ea790fcb21a34c26a660580cb</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDADCCAeigAwIBAgIQPacwDuaVYa5O3JNeQhkxqzANBgkqhkiG9w0BAQsFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjQxMDE0MDAyNjI4WhgPMjA1NDEwMTQwMDI2MjhaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ8ZGAr5&#xa;BpiVXEsMVCs7k+KxAaSrK5mqGUb3qD5bp4s9uIWCLrb+6tHMzaB0aRv13vr1m+db&#xa;PpMmPab8hxDGH9a5955aIBfRxvweRKbGea11KCodn+zCbnFwyPPoFAztklyaVr74&#xa;YmUgmCkkDlbih2GDlYWG3qeAfkcWl0nM3zCTz8MsXrcDnTkevLD0rAQ3XMKPwt+f&#xa;qGEUSHUzE72wzHY7a4Z4LwTCxnhVWlbHBBND5ZIV+liCXWOSYkmfmXQmIjAVV8dH&#xa;kFedBEh2Wwd8Rr8q50Phr4U1qMdJPYuPTSuXUWzMTh3LH7AVBQ8vjuQaadAjy8TZ&#xa;xp+Ih0JcCQnDNPMCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAEF5CqxL2T2DbXusj&#xa;zf0AMy3w7aGT4EO9TqgAsuDxrALqapmGZJ5Bcz5cfSHB21xkPpYhDaP1TTq0MMdM&#xa;zx9nvu6aYx1x2tCxmlclieSHzdCIQ2UBBNZZz0mtDMMKiz6pj8ZgHlyPxcAtofvs&#xa;uGEqWOmzsuVDU8eayhbtTQddYQh2j+anCBxkUHRkcrLk/b6hWLvIzk3NhxcuYKAN&#xa;w3Z1Ny2RlVlxoBneEfjp52H8e50N+9C1w9yN4rSIzHX/kD/2gFBIvTKqhXzPr7i9&#xa;buC4pz5D/iv61SR6s22csS56VuEMilhI/KuK4SxTEGyFseg5bznzXL2Hlf25IHuR&#xa;PcM9Tw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKLOSDIGISMP_SRV.TEST.COM.PH&#xa;Issuer: commonName=IDKLOSDIGISMP_SRV.TEST.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-12-14T13:42:10&#xa;Not valid after:  2026-06-15T13:42:10&#xa;MD5:     879b 67bf 95f7 cd8c 29b5 21ad bee7 6423&#xa;SHA-1:   9b56 cc73 dc4f d043 a10e d8c4 cbec 60c5 6080 b4ea&#xa;SHA-256: 96c9 1977 8d81 a7e4 9233 6c0f 1828 21c1 b6c2 47e9 237f b4a7 bf08 8064 f8b3 a10e"><table key="subject">
+<elem key="commonName">\x00U\x00S\x00B\x00L\x00O\x00S\x00D\x00I\x00G\x00I\x00S\x00M\x00P\x00_\x00D\x00B\x00.\x00U\x00S\x00B\x000\x008\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00U\x00S\x00B\x00L\x00O\x00S\x00D\x00I\x00G\x00I\x00S\x00M\x00P\x00_\x00D\x00B\x00.\x00U\x00S\x00B\x000\x008\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">A9EA4AB2F4BEE1556686A2F74FCC194211B19206887BE4C991761550CFE82E22537C5122E0B773F9F08506E411F43D3E4D5567D67E93970A225701F4CF30B4509C77BA8055526EBB6E3020F1C67FD7C605645B10B15E1ECE7E08B742AF309FE85687FDE66E439B04F3FA2351627859E4891FA15BBDA169877D906DEE16DE7FC358664830E174F31876E8950A5987CF48DEA20AAEAA53AB9C885C850DCEF2B7E6D21622B21190F785E614CE206963ADC7EA73317B58FADA5D2CC223869185CBF33A89EBE0EA393173D91AB93531C580024D55BD2453F01BE01DCA843345E47E6EBFE395227B33DB704DEB5B137BDC046A2210D00B2F067EB62924021E2AC14A4B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-12-14T13:42:10</elem>
+<elem key="notAfter">2026-06-15T13:42:10</elem>
+</table>
+<elem key="md5">879b67bf95f7cd8c29b521adbee76423</elem>
+<elem key="sha1">9b56cc73dc4fd043a10ed8c4cbec60c56080b4ea</elem>
+<elem key="sha256">96c919778d81a7e492336c0f182821c1b6c247e9237fb4a7bf088064f8b3a10e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDODCCAiCgAwIBAgIQVIsepscS0qFEsb5ZITNufTANBgkqhkiG9w0BAQsFADBF&#xa;MUMwQQYDVQQDHjoAVQBTAEIATABPAFMARABJAEcASQBTAE0AUABfAEQAQgAuAFUA&#xa;UwBCADAAOAAuAEMATwBNAC4AUABIMB4XDTI1MTIxNDEzNDIxMFoXDTI2MDYxNTEz&#xa;NDIxMFowRTFDMEEGA1UEAx46AFUAUwBCAEwATwBTAEQASQBHAEkAUwBNAFAAXwBE&#xa;AEIALgBVAFMAQgAwADgALgBDAE8ATQAuAFAASDCCASIwDQYJKoZIhvcNAQEBBQAD&#xa;ggEPADCCAQoCggEBAKnqSrL0vuFVZoai90/MGUIRsZIGiHvkyZF2FVDP6C4iU3xR&#xa;IuC3c/nwhQbkEfQ9Pk1VZ9Z+k5cKIlcB9M8wtFCcd7qAVVJuu24wIPHGf9fGBWRb&#xa;ELFeHs5+CLdCrzCf6FaH/eZuQ5sE8/ojUWJ4WeSJH6FbvaFph32Qbe4W3n/DWGZI&#xa;MOF08xh26JUKWYfPSN6iCq6qU6uciFyFDc7yt+bSFiKyEZD3heYUziBpY63H6nMx&#xa;e1j62l0swiOGkYXL8zqJ6+DqOTFz2Rq5NTHFgAJNVb0kU/Ab4B3KhDNF5H5uv+OV&#xa;Insz23BN61sTe9wEaiIQ0AsvBn62KSQCHirBSksCAwEAAaMkMCIwEwYDVR0lBAww&#xa;CgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBCwUAA4IBAQBccDHm&#xa;sapaekCFv7V3RdRyt8pakvrza25IOy8QN6v60gOrGhD47oW1g/A2tECoU+cwQ6yl&#xa;fhcQhzmRiJvdZpGkqB2WXCk7vLhW/5iUYaQVSjyV+JzTi5EboGcGpnGqKbXfwX6x&#xa;cC2wSkdTuLn+p0HkJ/AVt4JY12JTQCuK68PqPogHLVb86VY4EvzRGm9zl0sHXcr2&#xa;I61kaaqO2oKTXe9L+Wjk1Vx8YZmqLcO6EyfvmiFT6l2RJnZEYBAsuJfbyqlkvI6x&#xa;840hSd7mKVJCgF9NO4goZNRgHXc/KP3jYzfmBxy6lbkY4ydbmyLoy/l2lpjWBC3V&#xa;xhwiyH55zAOO7F5e&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="2905" rttvar="3501" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="125"/>
+<address addr="10.65.10.22" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ms-sql-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKSMP_APP.TEST.COM.PH&#xa;Issuer: commonName=IDKSMP_APP.TEST.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-12-12T12:42:55&#xa;Not valid after:  2026-06-13T12:42:55&#xa;MD5:     45df 2a7a 7b69 2d6a 161d ff73 9972 4db6&#xa;SHA-1:   116c 7e42 e1f6 aa92 bda2 69b0 451f b205 df21 8794&#xa;SHA-256: c6b6 dce4 928f c751 61b4 7e0c 420b 23a5 98bc 61e3 eab5 b1bd 98a8 ee42 1c46 ee51"><table key="subject">
+<elem key="commonName">\x00U\x00S\x00B\x00S\x00M\x00P\x00_\x00A\x00P\x00P\x00.\x00U\x00S\x00B\x000\x008\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00U\x00S\x00B\x00S\x00M\x00P\x00_\x00A\x00P\x00P\x00.\x00U\x00S\x00B\x000\x008\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">DD67918B7AB7AF88561F3C070278FA3EBFA4F0E2853604F3AD170E95BC8F8D1C0BD09ED710892385B4383A0AD72E49CD8271D5B62D6DFA970D097D9668ED6FA07EF78A22451F4AEC46D44F2CF99AF9B1B4CCE0BE2F38E3AECA252BB9306F69FC4A9736D1DFA6375751A3A0CFA9E026E020658A5D3C3D917A19BD8E51E30B856A5C2A2755A5A9C2F8CD8EC33B37C26C5BBC6D2DC09C12112CE345A4B944DDBFB738FD6C53520C089D59E300329B5D243FE938BCBC446F2B1774AD1644AD3CD09CEA3389D8200CDFA8491D6C1E625ECE392B0F8E5089D1A3AC02CE5BC8D0BC49C3AD0DDD65BE3C476226A44D137E4562577248903FC10D6CEFEFB58C0998A6E4C9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-12-12T12:42:55</elem>
+<elem key="notAfter">2026-06-13T12:42:55</elem>
+</table>
+<elem key="md5">45df2a7a7b692d6a161dff7399724db6</elem>
+<elem key="sha1">116c7e42e1f6aa92bda269b0451fb205df218794</elem>
+<elem key="sha256">c6b6dce4928fc75161b47e0c420b23a598bc61e3eab5b1bd98a8ee421c46ee51</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDIDCCAgigAwIBAgIQMWC/gM74IpVKZ6MYWcC9MDANBgkqhkiG9w0BAQsFADA5&#xa;MTcwNQYDVQQDHi4AVQBTAEIAUwBNAFAAXwBBAFAAUAAuAFUAUwBCADAAOAAuAEMA&#xa;TwBNAC4AUABIMB4XDTI1MTIxMjEyNDI1NVoXDTI2MDYxMzEyNDI1NVowOTE3MDUG&#xa;A1UEAx4uAFUAUwBCAFMATQBQAF8AQQBQAFAALgBVAFMAQgAwADgALgBDAE8ATQAu&#xa;AFAASDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAN1nkYt6t6+IVh88&#xa;BwJ4+j6/pPDihTYE860XDpW8j40cC9Ce1xCJI4W0ODoK1y5JzYJx1bYtbfqXDQl9&#xa;lmjtb6B+94oiRR9K7EbUTyz5mvmxtMzgvi84467KJSu5MG9p/EqXNtHfpjdXUaOg&#xa;z6ngJuAgZYpdPD2Rehm9jlHjC4VqXConVaWpwvjNjsM7N8JsW7xtLcCcEhEs40Wk&#xa;uUTdv7c4/WxTUgwInVnjADKbXSQ/6Ti8vERvKxd0rRZErTzQnOozidggDN+oSR1s&#xa;HmJezjkrD45QidGjrALOW8jQvEnDrQ3dZb48R2ImpE0TfkViV3JIkD/BDWzv77WM&#xa;CZim5MkCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQw&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQCDmJlLYRRLySUhR7zwx9GXnHFaBRC0gsVlqfOS&#xa;aJBIm+r3qdPb02J2aou/uXGBO7MBjM+jYipani8BPj1kvUqNnj6bR8/qnfFL6Lw6&#xa;Q+QvlhMeb7uoFDjv62daUDMxm1mwOmhTrP4dKHk04b+KMHI36tmkvuTGpeheulWU&#xa;t//htC3Ib6kaqY56qpkiUrYtgUCVgaEnAnue1s/QhydG30faHuN9jLxKXJkbuGRH&#xa;I/DM3siln76PEKM+cTICeU6lrWan6Ds7CBp9CLtl0uBwO9xy4W7pceGrw5UudPb1&#xa;FXz28p7u+gY+/ZJZDP6fWe+dLj89lJSlGBzpQKC/0wdJWauF&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="2801" rttvar="4112" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="125"/>
+<address addr="10.65.10.30" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2024-10-12T05:31:17&#xa;Not valid after:  2054-10-12T05:31:17&#xa;MD5:     f2ff 4a85 eddd 3418 607f 9087 c81b 17f5&#xa;SHA-1:   674a cc66 c5e5 743c 59c0 354b e9e7 a968 170e 0227&#xa;SHA-256: d17c 1af5 a497 0f98 af86 7885 e694 6ae5 5d36 7c6b 40b3 d24d be74 1b76 84dc 76fc"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">E401C446FEDCD79106146F8F956D73107618A0053183421972F6D26C2CAC17FA95CE094B9D3EAD515843444B4EBE1F57CA10C7048F514B245F630D6AB60F61D99A9D21050E3BCD4D0944FE036E4FD24E52CF6F999452BF07F422158E8E968B846ABD674358ABFCDF0C7564CD83509F7AC18D640959C105C7F71B2645F0F2E633</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-12T05:31:17</elem>
+<elem key="notAfter">2054-10-12T05:31:17</elem>
+</table>
+<elem key="md5">f2ff4a85eddd3418607f9087c81b17f5</elem>
+<elem key="sha1">674acc66c5e5743c59c0354be9e7a968170e0227</elem>
+<elem key="sha256">d17c1af5a4970f98af867885e6946ae55d367c6b40b3d24dbe741b7684dc76fc</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIB+zCCAWSgAwIBAgIQHbbKFlFZCJJBmVhEQQbEHjANBgkqhkiG9w0BAQUFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjQxMDEyMDUzMTE3WhgPMjA1NDEwMTIwNTMxMTdaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA5AHERv7c15EG&#xa;FG+PlW1zEHYYoAUxg0IZcvbSbCysF/qVzglLnT6tUVhDREtOvh9XyhDHBI9RSyRf&#xa;Yw1qtg9h2ZqdIQUOO81NCUT+A25P0k5Sz2+ZlFK/B/QiFY6OlouEar1nQ1ir/N8M&#xa;dWTNg1CfesGNZAlZwQXH9xsmRfDy5jMCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAq&#xa;miIjV025jUFP8zTiJGUbLRecYyLYTi/AnSFNSD3VfyIK5BUl+FUnFSM/dZ1wSZqq&#xa;zXBbPr/p3sJ4S6KHHok4I1YEKrIZEyr7DISeZCjzryHWajEykdWm4G1pQVSzKTbt&#xa;Z3ydyW9js8Hd2uo80jF9pXHXr8VY5Qi4wpD/iJ/ayQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKTSM_SRV.TEST03.COM.PH&#xa;Issuer: commonName=IDKTSM_SRV.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-09-18T12:24:25&#xa;Not valid after:  2026-03-20T12:24:25&#xa;MD5:     2eea c136 923f 5433 bdd7 3b3f c3b5 6e27&#xa;SHA-1:   91a6 7928 1555 43f5 2dc8 221c 0033 7a82 d5d2 a339&#xa;SHA-256: 2d99 741d 8b00 3c73 226a ea0d 3f6b 354c 3d82 0290 8f01 934e 3d76 6e69 0f36 ab6a"><table key="subject">
+<elem key="commonName">\x00U\x00S\x00B\x00T\x00S\x00M\x00_\x00D\x00B\x00.\x00U\x00S\x00B\x000\x009\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00U\x00S\x00B\x00T\x00S\x00M\x00_\x00D\x00B\x00.\x00U\x00S\x00B\x000\x009\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B975B2FB16543945E2B72495F181734A3A39439821AB2BAF9E16BAD43CDFB81BAD2E4F8370B47CD668B67991CAA0BB4DB241E0965DD174D8D0EE1585B255EB34CA15597861365BC5D26AE47A76A674A31A93A2CD056F9D6AECA98B35D2258638BB5099D177CD400A6553B9FC9B4FA67E23832C6B69EFDE55C5443C95028126BAA5253ACF0A46BF5B6759575DB3D3994941A042BE459E50E922D1D23D9E42D4D549949E19FE8E6A6377A57967D1683A968FDC8A9AF29A246F7C68AEC8683CDC66337605AF7CD4A8B1F4B813AE29E8D9686F9BAF13EFFB5EBBC444AA406B783A34EDE7228DB69C1E4FD55FC4EFBB8547A1AE4E31B59A15201F570541BC6A923B9F</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-09-18T12:24:25</elem>
+<elem key="notAfter">2026-03-20T12:24:25</elem>
+</table>
+<elem key="md5">2eeac136923f5433bdd73b3fc3b56e27</elem>
+<elem key="sha1">91a67928155543f52dc8221c00337a82d5d2a339</elem>
+<elem key="sha256">2d99741d8b003c73226aea0d3f6b354c3d8202908f01934e3d766e690f36ab6a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDHDCCAgSgAwIBAgIQFcdLbPPzlqhMRvzFV3ieKzANBgkqhkiG9w0BAQsFADA3&#xa;MTUwMwYDVQQDHiwAVQBTAEIAVABTAE0AXwBEAEIALgBVAFMAQgAwADkALgBDAE8A&#xa;TQAuAFAASDAeFw0yNTA5MTgxMjI0MjVaFw0yNjAzMjAxMjI0MjVaMDcxNTAzBgNV&#xa;BAMeLABVAFMAQgBUAFMATQBfAEQAQgAuAFUAUwBCADAAOQAuAEMATwBNAC4AUABI&#xa;MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuXWy+xZUOUXitySV8YFz&#xa;Sjo5Q5ghqyuvnha61DzfuButLk+DcLR81mi2eZHKoLtNskHgll3RdNjQ7hWFslXr&#xa;NMoVWXhhNlvF0mrkenamdKMak6LNBW+dauypizXSJYY4u1CZ0XfNQAplU7n8m0+m&#xa;fiODLGtp795VxUQ8lQKBJrqlJTrPCka/W2dZV12z05lJQaBCvkWeUOki0dI9nkLU&#xa;1UmUnhn+jmpjd6V5Z9FoOpaP3Iqa8pokb3xorshoPNxmM3YFr3zUqLH0uBOuKejZ&#xa;aG+brxPv+167xESqQGt4OjTt5yKNtpweT9VfxO+7hUehrk4xtZoVIB9XBUG8apI7&#xa;nwIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJ&#xa;KoZIhvcNAQELBQADggEBACDvqEQE4NeWAX7F7xkDxeoYtJ5zhFsu6X29giYvZcTW&#xa;J8fBvCdrZut6XpKJuf0n573Z8lVUfo30z8Buo56iS6EyvADMWwau1yD5TeSARF3M&#xa;t0vErPsgEeUkMMl8TyVY/kBCmoKWqOpyDwWSVBPkzh/HtI7PXHnCkXpNxXz5A6Q2&#xa;2S+llOdNyuznwiois727RgoT0SnLzSX7Wr2MkBCqTjLweVLBL6BdAlhfF1McwrOD&#xa;Ui+IBH4kFUrVbHAr4jVQVYSn6iAzztPyzSledzjdk2zoj4QRrAOVLNu6iphvLnCc&#xa;hTS+HyCOqifgBovfQ/nT56KFWF0scM70ieQbAS/mRU0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="closed" reason="reset" reason_ttl="125"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="2688" rttvar="2913" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697915"><status state="up" reason="echo-reply" reason_ttl="125"/>
+<address addr="10.65.10.32" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="closed" reason="reset" reason_ttl="125"/><service name="ms-sql-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKABC_APP.TEST03.COM.PH&#xa;Issuer: commonName=IDKABC_APP.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-09-18T11:40:40&#xa;Not valid after:  2026-03-20T11:40:40&#xa;MD5:     b880 1900 bbb1 3843 5e67 678a 275b d464&#xa;SHA-1:   bda2 c32e 2fbe 5f83 9d3d 4710 844a 3d44 c5bb c094&#xa;SHA-256: 5dff 0705 58c1 85e9 d8d6 731e 9937 7bc1 db8b 6735 f949 e180 8b34 dd4a e6eb 7356"><table key="subject">
+<elem key="commonName">\x00U\x00S\x00B\x00S\x00D\x00P\x00_\x00A\x00P\x00P\x00.\x00U\x00S\x00B\x000\x009\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00U\x00S\x00B\x00S\x00D\x00P\x00_\x00A\x00P\x00P\x00.\x00U\x00S\x00B\x000\x009\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C8E52960E1A08FF3BACB2763B45977B1DB7071B7583F7EFF4777F2C7B88B1C20DB1AA0F828C9BC5F9B26ACE479286959EEE569E32656F67648EE70F41580B781113A9C977EE3C61BC936EAC2FB3308EAAA59D82787089BDCDE49165DD168F02A1CB4729373135CB17393A30AB747CC194571A2F12E397AC997CA8D396C1B6C45375F1C729D0D005161D6737576A48ED8B330609FFADFFBE9D8A62F5745754A6ECC9083DEE535B923C7D16D399091D8A4D2202E15EBCF2736102AF81BB3ED296AF066F775F003407A7B19E635CD906C1BF9CF384A932EE86EF44C9BE462566CF2B982BAC1208A19E9F79526C32D715215F850059F4EC6F5A4480BDACE890C152B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-09-18T11:40:40</elem>
+<elem key="notAfter">2026-03-20T11:40:40</elem>
+</table>
+<elem key="md5">b8801900bbb138435e67678a275bd464</elem>
+<elem key="sha1">bda2c32e2fbe5f839d3d4710844a3d44c5bbc094</elem>
+<elem key="sha256">5dff070558c185e9d8d6731e99377bc1db8b6735f949e1808b34dd4ae6eb7356</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDIDCCAgigAwIBAgIQY8Lw6VVwubxAF4rcGyY94DANBgkqhkiG9w0BAQsFADA5&#xa;MTcwNQYDVQQDHi4AVQBTAEIAUwBEAFAAXwBBAFAAUAAuAFUAUwBCADAAOQAuAEMA&#xa;TwBNAC4AUABIMB4XDTI1MDkxODExNDA0MFoXDTI2MDMyMDExNDA0MFowOTE3MDUG&#xa;A1UEAx4uAFUAUwBCAFMARABQAF8AQQBQAFAALgBVAFMAQgAwADkALgBDAE8ATQAu&#xa;AFAASDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMjlKWDhoI/zussn&#xa;Y7RZd7HbcHG3WD9+/0d38se4ixwg2xqg+CjJvF+bJqzkeShpWe7laeMmVvZ2SO5w&#xa;9BWAt4EROpyXfuPGG8k26sL7MwjqqlnYJ4cIm9zeSRZd0WjwKhy0cpNzE1yxc5Oj&#xa;CrdHzBlFcaLxLjl6yZfKjTlsG2xFN18ccp0NAFFh1nN1dqSO2LMwYJ/63/vp2KYv&#xa;V0V1Sm7MkIPe5TW5I8fRbTmQkdik0iAuFevPJzYQKvgbs+0pavBm93XwA0B6exnm&#xa;Nc2QbBv5zzhKky7obvRMm+RiVmzyuYK6wSCKGen3lSbDLXFSFfhQBZ9OxvWkSAva&#xa;zokMFSsCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQw&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQCLNe+uHKTol8KGlrXf4rYkX3DCuBnHugpNU5wB&#xa;wsht9vMMVT5os0ZBEijb2ok4jUKASroZrLwRLKJ2P2rSQ4/2Q3j1oUivfEB3F8Gu&#xa;/JhsNG2lqBcjNgoU8oW47WmdXa4tKda6xohFzOfZxEjF3tFMQkwerBfUE6X5mgn4&#xa;Tc5g2wouwbnC7I51YjtI5DL3+lsub5o4vNJ/v+on7TSiszuiCXu1mhWwrjqUDEYD&#xa;1HvkPUkGO4Byfk9NAB7KF8ubUVDZIqq4ioomFRQs7J6ODyXd7HLIBBzerJUOSSXs&#xa;JGoQ7uRwh7tg0roPOkMCM1L/BqGvNRS0efxjzeJecxZfuuCz&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="closed" reason="reset" reason_ttl="125"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="2417" rttvar="2879" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697914"><status state="up" reason="echo-reply" reason_ttl="125"/>
+<address addr="10.65.10.33" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="closed" reason="reset" reason_ttl="125"/><service name="ms-sql-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKABC_APPtest.TEST03.COM.PH&#xa;Issuer: commonName=IDKABC_APPtest.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-12-21T17:10:40&#xa;Not valid after:  2026-06-22T17:10:40&#xa;MD5:     237d 6f52 843f 4323 af83 efc0 cb5d f3a2&#xa;SHA-1:   dd35 41cc 29a3 bcc9 28eb 4b93 4bc3 c840 1994 c556&#xa;SHA-256: 8f88 a9d4 e397 5580 e84e ec1c efb7 b1b3 8f45 ee09 6b45 d043 9565 dd2d d267 6a79"><table key="subject">
+<elem key="commonName">\x00U\x00S\x00B\x00S\x00D\x00P\x00_\x00A\x00P\x00P\x00t\x00e\x00s\x00t\x00.\x00U\x00S\x00B\x000\x009\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00U\x00S\x00B\x00S\x00D\x00P\x00_\x00A\x00P\x00P\x00t\x00e\x00s\x00t\x00.\x00U\x00S\x00B\x000\x009\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">962A2F77BAE5D5A1FAB2C15642F28644293F88CFC4D31E02831EAA3CDFA530D1B1945D46AE473FA3C1B1D9EDAE499744FD26F6C52C72346C18EFB9B2732EC11718E0B18FC265F7D6949BCBD84C1267AC71A50B5448AF659BEDAC25768D872A8DEF9BB5DDEA28415E5D4019662BD0B5CF00CD7A0892FC913CECC727A5D9FF3348DD67CC2E21C89EB7DEE8C1A7DA18605282072A88917F68182E63C02F31AC4C625416E9E24C98F8403383D471622BD8F48D5BE5A2C4ED183EA05E5BF53C448F1A582DD117AFF553631C0C1BFAFE58002ED9755D0CC960D8F7E25FB8B107ADBD38D763A5B31BA5BD88038F6607144481134EA3F5677837B9B6E768237B8B41D8E5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-12-21T17:10:40</elem>
+<elem key="notAfter">2026-06-22T17:10:40</elem>
+</table>
+<elem key="md5">237d6f52843f4323af83efc0cb5df3a2</elem>
+<elem key="sha1">dd3541cc29a3bcc928eb4b934bc3c8401994c556</elem>
+<elem key="sha256">8f88a9d4e3975580e84eec1cefb7b1b38f45ee096b45d0439565dd2dd2676a79</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDMDCCAhigAwIBAgIQGJ/3kTQ2LqdJiQAP/1HjgjANBgkqhkiG9w0BAQsFADBB&#xa;MT8wPQYDVQQDHjYAVQBTAEIAUwBEAFAAXwBBAFAAUAB0AGUAcwB0AC4AVQBTAEIA&#xa;MAA5AC4AQwBPAE0ALgBQAEgwHhcNMjUxMjIxMTcxMDQwWhcNMjYwNjIyMTcxMDQw&#xa;WjBBMT8wPQYDVQQDHjYAVQBTAEIAUwBEAFAAXwBBAFAAUAB0AGUAcwB0AC4AVQBT&#xa;AEIAMAA5AC4AQwBPAE0ALgBQAEgwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQCWKi93uuXVofqywVZC8oZEKT+Iz8TTHgKDHqo836Uw0bGUXUauRz+jwbHZ&#xa;7a5Jl0T9JvbFLHI0bBjvubJzLsEXGOCxj8Jl99aUm8vYTBJnrHGlC1RIr2Wb7awl&#xa;do2HKo3vm7Xd6ihBXl1AGWYr0LXPAM16CJL8kTzsxyel2f8zSN1nzC4hyJ633ujB&#xa;p9oYYFKCByqIkX9oGC5jwC8xrExiVBbp4kyY+EAzg9RxYivY9I1b5aLE7Rg+oF5b&#xa;9TxEjxpYLdEXr/VTYxwMG/r+WAAu2XVdDMlg2PfiX7ixB629ONdjpbMbpb2IA49m&#xa;BxREgRNOo/VneDe5tudoI3uLQdjlAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF&#xa;BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEATdVBs1TEhE9dqn+z&#xa;RU91vi8YDvczJ6TFm5Si1YzvwuWMKBwmQkjirRQ/M81Weo0X9pT+HkIfK4bReWw5&#xa;K9JVvqQvkHnzdrBKc1/fc9MhbetOyfrbRJRpjVpCl7OnjbtwqKgCrYVpu84HS0wI&#xa;Pvd+vsFrxQGZ41yE7DOZG2/D0KU3RMybxodmai3fqWSxjReFE4bksB1K28MyLpEH&#xa;7Gmyx6iB2ypoe/oKYZqYGEFeMipvh/dwA1l7+rfg8gf0kkSioeiDtwWjDT1a8DDI&#xa;SasH+Yr37fXQfUgwz5cs1ccnsq/MfzGyY4zr2hYZxjmXBVJqXv/Ts99kxYFbCW5l&#xa;gEnYPQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="closed" reason="reset" reason_ttl="125"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="2497" rttvar="2926" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="125"/>
+<address addr="10.65.10.42" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKLOSDIGISMP_SRV_test/organizationName=Sample Company/stateOrProvinceName=Metro Manila/countryName=PH&#xa;Issuer: commonName=IDKLOSDIGISMP_SRV_test/organizationName=Sample Company/stateOrProvinceName=Metro Manila/countryName=PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-12-12T08:48:32&#xa;Not valid after:  2025-12-12T08:48:32&#xa;MD5:     3115 51e9 b4da c9c7 650f eca9 9492 9f4d&#xa;SHA-1:   23d6 57ef 9e5a 81f8 1fe4 6b76 5c28 a003 7d02 c9cb&#xa;SHA-256: 8315 092a f2ae 8544 e4e2 84b1 0b2f 1d70 d666 9819 08a6 036a fc92 2033 b23a f911"><table key="subject">
+<elem key="commonName">IDKLOSDIGISMP_SRV_test</elem>
+<elem key="countryName">PH</elem>
+<elem key="emailAddress">User@example.com</elem>
+<elem key="localityName">Taguig City</elem>
+<elem key="organizationName">Sample Company</elem>
+<elem key="organizationalUnitName">Helpdesk</elem>
+<elem key="stateOrProvinceName">Metro Manila</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDKLOSDIGISMP_SRV_test</elem>
+<elem key="countryName">PH</elem>
+<elem key="emailAddress">User@example.com</elem>
+<elem key="localityName">Taguig City</elem>
+<elem key="organizationName">Sample Company</elem>
+<elem key="organizationalUnitName">Helpdesk</elem>
+<elem key="stateOrProvinceName">Metro Manila</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CE994A1D36C1B33C448DDC86A4E5A4460B0AEC03D2E2735FA6B0ABC4183A1DE5E6508EF593028A35D1A639D0080330B202A8D4803ECC94D644AA1762969948274CDE6B9CBA0889DF7593586F00D480B1D6A1822D93843DF74CAEF14834E839D9270991FF1FA5852C1E7721652B83634372053748E296C950E94EF4B3DF4F462537CAA895B5A6392CD2D5A1C11DB6ABD1D219D727266BCE8B676081FEF9753BDEA14E6963289C66C18BD35206210DF198A9B367EF209805D306B6547EAA3542F7A1ADECD02259B2597685A77FC71631EB722830D953D11148538170DC1354DA6D23433179B630E12D491FD18CE67A7FF93D47E94A897815C94906989326F0848B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">09:39:DB:26:CA:27:A5:77:94:86:3B:E2:55:76:0C:7F:A8:D1:0F:4D</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-12-12T08:48:32</elem>
+<elem key="notAfter">2025-12-12T08:48:32</elem>
+</table>
+<elem key="md5">311551e9b4dac9c7650feca994929f4d</elem>
+<elem key="sha1">23d657ef9e5a81f81fe46b765c28a0037d02c9cb</elem>
+<elem key="sha256">8315092af2ae8544e4e284b10b2f1d70d666981908a6036afc922033b23af911</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEGzCCAwOgAwIBAgIUEz8yBt9M7o8PFEINWU3WGibLF+UwDQYJKoZIhvcNAQEL&#xa;BQAwgbUxCzAJBgNVBAYTAlBIMRUwEwYDVQQIDAxNZXRybyBNYW5pbGExFDASBgNV&#xa;BAcMC1F1ZXpvbiBDaXR5MRowGAYDVQQKDBFVQ1BCIFNhdmluZ3MgQmFuazEUMBIG&#xa;A1UECwwLSVQgRGl2aXNpb24xHjAcBgNVBAMMFVVTQkxPU0RJR0lTTVBfREJfdGVz&#xa;dDEnMCUGCSqGSIb3DQEJARYYSk1HdWxwYW5AdWNwYnNhdmluZ3MuY29tMB4XDTI0&#xa;MTIxMjA4NDgzMloXDTI1MTIxMjA4NDgzMlowgbUxCzAJBgNVBAYTAlBIMRUwEwYD&#xa;VQQIDAxNZXRybyBNYW5pbGExFDASBgNVBAcMC1F1ZXpvbiBDaXR5MRowGAYDVQQK&#xa;DBFVQ1BCIFNhdmluZ3MgQmFuazEUMBIGA1UECwwLSVQgRGl2aXNpb24xHjAcBgNV&#xa;BAMMFVVTQkxPU0RJR0lTTVBfREJfdGVzdDEnMCUGCSqGSIb3DQEJARYYSk1HdWxw&#xa;YW5AdWNwYnNhdmluZ3MuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC&#xa;AQEAzplKHTbBszxEjdyGpOWkRgsK7APS4nNfprCrxBg6HeXmUI71kwKKNdGmOdAI&#xa;AzCyAqjUgD7MlNZEqhdilplIJ0zea5y6CInfdZNYbwDUgLHWoYItk4Q990yu8Ug0&#xa;6DnZJwmR/x+lhSwedyFlK4NjQ3IFN0jilslQ6U70s99PRiU3yqiVtaY5LNLVocEd&#xa;tqvR0hnXJyZrzotnYIH++XU73qFOaWMonGbBi9NSBiEN8Zips2fvIJgF0wa2VH6q&#xa;NUL3oa3s0CJZsll2had/xxYx63IoMNlT0RFIU4Fw3BNU2m0jQzF5tjDhLUkf0Yzm&#xa;en/5PUfpSol4FclJBpiTJvCEiwIDAQABoyEwHzAdBgNVHQ4EFgQUCTnbJsonpXeU&#xa;hjviVXYMf6jRD00wDQYJKoZIhvcNAQELBQADggEBAGdJ69spnrjnxcHx9lOyXK4q&#xa;FzeFdmFM5yRYJNrFuSD8eQnOUbwQvIeWmaB8AJydAP/+4yJCyPUYtbHBByYM4Fb+&#xa;BBkfICoTV2J0EFrKfPROxpy3RnSeRRycCFcbGIie5EKS3AtgtieUfioG2MlVB/+0&#xa;qdq2Wc17VEXs6EcDuqlq/lC/hPrX6f6TWmDopeFOe2goC7bb3Fo4/70lf+uZP+yf&#xa;WA6VuWeM6TDAiIXDnNQNkmsoBLJDyXSHwq09SbfclK2TCBWvUDVqP+9bu/IydGVF&#xa;Fwb8Y+AfnPxl8HnBH7X4CGe7wS7u1quDbnvTKg4GWwZ2tTZGJ5yiQJk5eARPjUs=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKLOSDIGISMP_SRV_test&#xa;Issuer: commonName=IDKLOSDIGISMP_SRV_test&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-12-31T16:00:00&#xa;Not valid after:  2026-07-02T16:00:00&#xa;MD5:     fd21 93e8 6ef1 3a55 2ab8 3f1f 957c 6eba&#xa;SHA-1:   e4a9 714b 729c 4edb caa0 4573 75f0 bc65 f415 ff80&#xa;SHA-256: 6cac fd57 2812 f494 1e96 f44a 52ca 294b e560 4ace 0882 b946 f2a8 e9f8 4c12 2a6c"><table key="subject">
+<elem key="commonName">\x00U\x00S\x00B\x00L\x00O\x00S\x00D\x00I\x00G\x00I\x00S\x00M\x00P\x00_\x00D\x00B\x00_\x00t\x00e\x00s\x00t</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00U\x00S\x00B\x00L\x00O\x00S\x00D\x00I\x00G\x00I\x00S\x00M\x00P\x00_\x00D\x00B\x00_\x00t\x00e\x00s\x00t</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">F0189BD312B58AE492ACCCBB859BDC9CCE960E4B72036CF42AD59D0D1686C438F7BEAA4265C280504F4551B7788151E3FE4CB60A09BAFBBA85EDE9F1F908B43B843E5999FA596BB6705C5756B4FC610EE175EEE14773AD45A492F02B4A91459F4D30BB9AA7C0CC1050F363832E0EBDC5254A3A498C684225A22317455510B486417176272550D695204C8F1D568FE0EE078C3968D0645DCBF8BC36072A990891FD7370FBD41C5125680CDC085B0A3CB1F171BAA9D3C9889375BB80751C3EC69407473AE26C2964CA5DA8AE60472F3E78A4BBDB43C9BC80DC3444563AEB0B4E1B714104F220202024392A6CCBE224DDD471D0A1BC98E4880B35768535A258F8C3</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-12-31T16:00:00</elem>
+<elem key="notAfter">2026-07-02T16:00:00</elem>
+</table>
+<elem key="md5">fd2193e86ef13a552ab83f1f957c6eba</elem>
+<elem key="sha1">e4a9714b729c4edbcaa0457375f0bc65f415ff80</elem>
+<elem key="sha256">6cacfd572812f4941e96f44a52ca294be5604ace0882b946f2a8e9f84c122a6c</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDGDCCAgCgAwIBAgIQRadusDAg+bRF7Lo8yDFMdjANBgkqhkiG9w0BAQsFADA1&#xa;MTMwMQYDVQQDHioAVQBTAEIATABPAFMARABJAEcASQBTAE0AUABfAEQAQgBfAHQA&#xa;ZQBzAHQwHhcNMjUxMjMxMTYwMDAwWhcNMjYwNzAyMTYwMDAwWjA1MTMwMQYDVQQD&#xa;HioAVQBTAEIATABPAFMARABJAEcASQBTAE0AUABfAEQAQgBfAHQAZQBzAHQwggEi&#xa;MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDwGJvTErWK5JKszLuFm9yczpYO&#xa;S3IDbPQq1Z0NFobEOPe+qkJlwoBQT0VRt3iBUeP+TLYKCbr7uoXt6fH5CLQ7hD5Z&#xa;mfpZa7ZwXFdWtPxhDuF17uFHc61FpJLwK0qRRZ9NMLuap8DMEFDzY4MuDr3FJUo6&#xa;SYxoQiWiIxdFVRC0hkFxdiclUNaVIEyPHVaP4O4HjDlo0GRdy/i8NgcqmQiR/XNw&#xa;+9QcUSVoDNwIWwo8sfFxuqnTyYiTdbuAdRw+xpQHRzribClkyl2ormBHLz54pLvb&#xa;Q8m8gNw0RFY66wtOG3FBBPIgICAkOSpsy+Ik3dRx0KG8mOSICzV2hTWiWPjDAgMB&#xa;AAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG&#xa;9w0BAQsFAAOCAQEAUxJ65qbdkf7m0vYHBjTitLiPPhx+ni+POT1Ys5tWYNtvcLbG&#xa;z+PJYAN5TazEj0QlYVSX1wrg1i0in1CGpC6dMx4zuI9KoEM+sbxRw/aoU5vrA50P&#xa;phHwBgcfRD4Br8NYbJSXv44TBRVHL+2aTNg7RwsNShM8l5g3qj1lXRMFZVDpIeIB&#xa;1KUAKPj5qOdK8YOB7tIKGS0TpnrCbsmMtkLUpFfDUjuKKreQupGtCklXUPBZBPMk&#xa;fSTh78Gi/v7CX75Kogucfkd7DoCSYFWVs8musRKXaN2i8Un1uEjpNTwZ46ustjlz&#xa;gdZS7j9ZUGJF8fTx1xmDrnNtbZQO3h5OA69tdw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="2359" rttvar="2863" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="125"/>
+<address addr="10.65.10.87" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-12T05:35:50&#xa;Not valid after:  2054-10-12T05:35:50&#xa;MD5:     7907 bcff 63fb 00d7 0cb6 e7e2 70a2 d079&#xa;SHA-1:   f4ec 059b 23b9 48f6 6b72 a547 69c5 8cf2 bc33 6a2b&#xa;SHA-256: 12f3 a0c4 9cb7 024e d181 2fbf 315b cf29 0a4f 0a31 73d7 e52b 9335 38b0 6ff6 d57b"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C482778EB12D0B963026970762E792DDDCC44EDDECB5B01D4901EDE706F6C0D3037B60F01C3B92416B46B2F9473DDCBE55BBB710F7137A596354ED95191897A180355D277E821423CA5CD492E7085E802B6F0A76352E902C2B97EC4DB2F16128A2A990CEED9D1CCDFE9BBD4A1DA79EC96E0EE2F17E6CC737F137F61C6B3AF3C08BB9AA2FCA333EA78E0E9649A869090A8FC61B3FD17CA67EB2AF21E130BB78F272717BCA8B235C503EAABEE9F711214C59CD5C9F08EC2F7041CB416AD11D387B55A4E57B6F7B0F5C5A69D3678FD0ECF8739C2EE4F48CDCAAFB5AA3B63687D13045CCEA185933220E4DB017887669809114A222A85479280262762A1F59F84F69</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-12T05:35:50</elem>
+<elem key="notAfter">2054-10-12T05:35:50</elem>
+</table>
+<elem key="md5">7907bcff63fb00d70cb6e7e270a2d079</elem>
+<elem key="sha1">f4ec059b23b948f66b72a54769c58cf2bc336a2b</elem>
+<elem key="sha256">12f3a0c49cb7024ed1812fbf315bcf290a4f0a3173d7e52b933538b06ff6d57b</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDADCCAeigAwIBAgIQHk700v4W0YFGQd/hUpCxGDANBgkqhkiG9w0BAQsFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjQxMDEyMDUzNTUwWhgPMjA1NDEwMTIwNTM1NTBaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMSCd46x&#xa;LQuWMCaXB2Lnkt3cxE7d7LWwHUkB7ecG9sDTA3tg8Bw7kkFrRrL5Rz3cvlW7txD3&#xa;E3pZY1TtlRkYl6GANV0nfoIUI8pc1JLnCF6AK28KdjUukCwrl+xNsvFhKKKpkM7t&#xa;nRzN/pu9Sh2nnsluDuLxfmzHN/E39hxrOvPAi7mqL8ozPqeODpZJqGkJCo/GGz/R&#xa;fKZ+sq8h4TC7ePJycXvKiyNcUD6qvun3ESFMWc1cnwjsL3BBy0Fq0R04e1Wk5Xtv&#xa;ew9cWmnTZ4/Q7PhznC7k9Izcqvtao7Y2h9EwRczqGFkzIg5NsBeIdmmAkRSiIqhU&#xa;eSgCYnYqH1n4T2kCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAWHM2vcK+EazTYrda&#xa;xSNi04dxZ7ikAHVfXMse4qROiNZpXpdJhJwMq/mlE7B6JpEtWD9JdShPR+j/llbS&#xa;vTnTq+qY4V98gz+kIBw25P2gK0Wf1CrbriNG0hl1r1DU+c9nR5bUhQu+amzkUauy&#xa;OJQ85dAE2ippJxFDqY+SlAiBE1+ltx3EMsnc88T7PEqiWETx8u1JTYXZp6mzWPII&#xa;eQ7x6bPJTyiGsP8PclvciRmV1t1Z7i2n5vImabzZc4VM4r+O4gdpVp6ZS9Owdpgv&#xa;nM5zprfxV9unG8tAetrKMTCqpaFybrWCM+U6UDWB1+cgua+RQmDWULHTcXhVmn8V&#xa;xGKKkQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKOLAPDB.TEST.COM.PH&#xa;Issuer: commonName=IDKOLAPDB.TEST.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-11-15T07:39:24&#xa;Not valid after:  2026-05-17T07:39:24&#xa;MD5:     54f7 5e05 bc8c e1e9 f860 e439 b7bb ed7d&#xa;SHA-1:   0656 7598 7b46 1c61 e4f8 9661 9842 3428 7ed0 530c&#xa;SHA-256: 2d62 8cb3 ad21 a2a7 bbb4 a240 9063 6670 b01e ed5d edfb dc75 f1f2 2ebf aede e238"><table key="subject">
+<elem key="commonName">IDKOLAPDB.TEST.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDKOLAPDB.TEST.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">913776CECED1ADE7ECE46CD38B6311C973788BFE3FB5A0025FD9B052451B152799A0161802FEA0E27D50D29099F9882199E71066EA0893D96D9B587781A839E3E1BE80A679404D7F37FF2619144D7A9BF9749724F534C5C1B336214C965F5AB93EF97D02E673DC63D786DF735480FD3D1FBD1A5DA73A3E381B7C3BDEBF096AF33E3755C2940C6FFBBABD7AD650875CD33252F14B95D4404A109B5853B0736BA084A306880BACAB15B7CFF8B1B4E5AA74BF5C5C94BB9010A2F88DFEB9B2C9DAFEF0D0A14EDCC6C34747C8E8EB1388141B5F7DC4EA2994A7A3786C2A8B364B71E5C9F84DDF7D759343A3A4D6688C1DB95833ECF5347CF60927D85DBFAA25940853</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-11-15T07:39:24</elem>
+<elem key="notAfter">2026-05-17T07:39:24</elem>
+</table>
+<elem key="md5">54f75e05bc8ce1e9f860e439b7bbed7d</elem>
+<elem key="sha1">065675987b461c61e4f89661984234287ed0530c</elem>
+<elem key="sha256">2d628cb3ad21a2a7bbb4a24090636670b01eed5dedfbdc75f1f22ebfaedee238</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC8DCCAdigAwIBAgIQGpdzickD74BCOHHKDPQvNzANBgkqhkiG9w0BAQsFADAh&#xa;MR8wHQYDVQQDExZVU0JPTEFQREIuVVNCMDguQ09NLlBIMB4XDTI1MTExNTA3Mzky&#xa;NFoXDTI2MDUxNzA3MzkyNFowITEfMB0GA1UEAxMWVVNCT0xBUERCLlVTQjA4LkNP&#xa;TS5QSDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJE3ds7O0a3n7ORs&#xa;04tjEclzeIv+P7WgAl/ZsFJFGxUnmaAWGAL+oOJ9UNKQmfmIIZnnEGbqCJPZbZtY&#xa;d4GoOePhvoCmeUBNfzf/JhkUTXqb+XSXJPU0xcGzNiFMll9auT75fQLmc9xj14bf&#xa;c1SA/T0fvRpdpzo+OBt8O96/CWrzPjdVwpQMb/u6vXrWUIdc0zJS8UuV1EBKEJtY&#xa;U7Bza6CEowaIC6yrFbfP+LG05ap0v1xclLuQEKL4jf65ssna/vDQoU7cxsNHR8jo&#xa;6xOIFBtffcTqKZSno3hsKos2S3HlyfhN3311k0OjpNZojB25WDPs9TR89gkn2F2/&#xa;qiWUCFMCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQw&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQAZnELH5h2RVgDLxVktTHbuusXM9/sk+QEEjZ5H&#xa;3YRkawguFX9CCUH7YqHKoEQ06QyJ1rRjk4csFLR3twBDNfLq51Z8LvRUH/MDuYHV&#xa;1zv3Al3tAN3gGMWepHu+s6zdrwENswUPr7OhaIrekFq0p1iSfzVIlNVRUnqvB03i&#xa;s115pDv4/63/ZfCpCNXQ/I6lCWC0AcbLo4ces2/1umwxjtKH8meMv/T2iYCHh4KC&#xa;nToBC/XOrfK6KhtDcgzOP1jBGr73CCj8CGilOYAspdI37uEdcnVORkEfyPgi5QM2&#xa;iHJaAbsFqQYvyRK07qp6TtxYMV9L2BCmld/s37cNRxuZf1H2&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="2653" rttvar="3529" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="125"/>
+<address addr="10.65.10.96" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-01-16T09:43:38&#xa;Not valid after:  2056-01-16T09:43:38&#xa;MD5:     8fc4 58ce 490b 6812 1424 a821 b4b5 26cb&#xa;SHA-1:   ebf6 f8d7 7ae9 314d 1e3f b43c f2fe e032 6660 0e79&#xa;SHA-256: 1a39 537e 92df fa57 6bf2 8406 bca1 ba7e d5ee bdd2 b224 a55b bef4 3e59 955a 8391"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">99703717C2F431AF3460516419DB568333A7F97930E91892DD423D4255871B6E68DBFE0B6943F314AD019BF8C925B617587E714C4BB77BF8D18EE9DAB3C030BC6E106E3CF1A5385CB420922B82A617C36FF64F87A2E1B468544328B7E455B3B75EB8880702EF67767C5F8418E340B372F9B8B5270BBD5164464DC2722285AEDC92B3C43BBBD265FB439DF95C2C6C570BBE128E975AD28C7A41AB13AF3989BB1C4262E92032BDC58B7755925F9500CF687B437FFD7F63B35737216BC124AA46F7244D3B71D3639F66DD805F916B96CD4D9995F7B71143CAA656EE1D53494143632FB3133BD2831BDB0128AB6745C9D6CDD730E66D113806B44C499783655E234F</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-01-16T09:43:38</elem>
+<elem key="notAfter">2056-01-16T09:43:38</elem>
+</table>
+<elem key="md5">8fc458ce490b68121424a821b4b526cb</elem>
+<elem key="sha1">ebf6f8d77ae9314d1e3fb43cf2fee03266600e79</elem>
+<elem key="sha256">1a39537e92dffa576bf28406bca1ba7ed5eebdd2b224a55bbef43e59955a8391</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDADCCAeigAwIBAgIQHU8kfaaMH5FOB69gF+gwxDANBgkqhkiG9w0BAQsFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjYwMTE2MDk0MzM4WhgPMjA1NjAxMTYwOTQzMzhaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJlwNxfC&#xa;9DGvNGBRZBnbVoMzp/l5MOkYkt1CPUJVhxtuaNv+C2lD8xStAZv4ySW2F1h+cUxL&#xa;t3v40Y7p2rPAMLxuEG488aU4XLQgkiuCphfDb/ZPh6LhtGhUQyi35FWzt164iAcC&#xa;72d2fF+EGONAs3L5uLUnC71RZEZNwnIiha7ckrPEO7vSZftDnflcLGxXC74Sjpda&#xa;0ox6QasTrzmJuxxCYukgMr3Fi3dVkl+VAM9oe0N//X9js1c3IWvBJKpG9yRNO3HT&#xa;Y59m3YBfkWuWzU2Zlfe3EUPKplbuHVNJQUNjL7MTO9KDG9sBKKtnRcnWzdcw5m0R&#xa;OAa0TEmXg2VeI08CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAhxTykQD1H/U9caO7&#xa;wFJ6yRUhGEpeH5Ar9xKPyheogLAuLcId2Hj6X0aVBFUgV8hffgguLYMlPVfWg80p&#xa;F3C588gtT94QHyxTBP5wJ9Iq7rN2+R+6zYqde1v+9/wLkYqqVMhDoOcmFj+IqPyh&#xa;Y0VcoLt3sCKtnZM3Wsx3zTXWhOqzU/86vSyYvrj6/6imL7C9T1YkvMVB8ERNxgKw&#xa;DCunw3nobIw8mvuXdMhi5IkfNycCDBOdyQA9BD8pqzf79pdnLQx+slJOTMfmgah3&#xa;sOv5tpqUDsyNqJvTOb8jmfVbqG5Xt6tG871l7WTRV2Lfb2cwX/0WjcKO1H6Xd6b9&#xa;4WEMDg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKBASE60_SRV.TEST03.COM.PH&#xa;Issuer: commonName=IDKBASE60_SRV.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-01-07T16:00:00&#xa;Not valid after:  2026-07-09T16:00:00&#xa;MD5:     a20a 98dd e49a 9f09 bffe 42f8 b136 800a&#xa;SHA-1:   d731 dd16 c586 eef0 43b1 7de8 b31c 699c aab6 c1ed&#xa;SHA-256: 53e7 aff8 3683 3c10 c2e0 fad6 3c2e 864d 5cf8 12ab 5c25 f112 e677 771a ab2c 3b36"><table key="subject">
+<elem key="commonName">\x00U\x00S\x00B\x00B\x00A\x00S\x00E\x006\x000\x00_\x00D\x00B\x00.\x00U\x00S\x00B\x000\x009\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00U\x00S\x00B\x00B\x00A\x00S\x00E\x006\x000\x00_\x00D\x00B\x00.\x00U\x00S\x00B\x000\x009\x00.\x00C\x00O\x00M\x00.\x00P\x00H</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C4CA85D4E4E2368B74D8BAAEF41D5E610B3CB9B327A5310FC9BEC1FFE81211ECDF54DF6FEDC6189180F302BA6CE0A7A975706F50D36105E27407D7C39ED1876FC7414CBF85E4D94534991EBB318E0A0C2C26ABD680D415684412648B832E585ABEAF0E1F8B0F5FDA13B80B59ED639F7ED457A8915E1CEB98BCF33AE896AC559DBA2AAE5CE83D093BD925E7C88AA779B7EC21D54AFF5D1052C9B564A55C980B2D70A0D2B72CF25238EF2B45F16176F00E1466CACCFB72052F114EB922DDC5DA05178C9D3F253488EF9A50CCE5A334F46B29A84B5027FD30EBEA9F24F4B6D9BAC9973BAE7FAF1AED5BC90FC98142B56B4FB571484CE6459013035509D1C16C5DB1</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-01-07T16:00:00</elem>
+<elem key="notAfter">2026-07-09T16:00:00</elem>
+</table>
+<elem key="md5">a20a98dde49a9f09bffe42f8b136800a</elem>
+<elem key="sha1">d731dd16c586eef043b17de8b31c699caab6c1ed</elem>
+<elem key="sha256">53e7aff836833c10c2e0fad63c2e864d5cf812ab5c25f112e677771aab2c3b36</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDKDCCAhCgAwIBAgIQaUg7Dv6qCp5HAAklWHmg9TANBgkqhkiG9w0BAQsFADA9&#xa;MTswOQYDVQQDHjIAVQBTAEIAQgBBAFMARQA2ADAAXwBEAEIALgBVAFMAQgAwADkA&#xa;LgBDAE8ATQAuAFAASDAeFw0yNjAxMDcxNjAwMDBaFw0yNjA3MDkxNjAwMDBaMD0x&#xa;OzA5BgNVBAMeMgBVAFMAQgBCAEEAUwBFADYAMABfAEQAQgAuAFUAUwBCADAAOQAu&#xa;AEMATwBNAC4AUABIMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxMqF&#xa;1OTiNot02Lqu9B1eYQs8ubMnpTEPyb7B/+gSEezfVN9v7cYYkYDzArps4KepdXBv&#xa;UNNhBeJ0B9fDntGHb8dBTL+F5NlFNJkeuzGOCgwsJqvWgNQVaEQSZIuDLlhavq8O&#xa;H4sPX9oTuAtZ7WOfftRXqJFeHOuYvPM66JasVZ26Kq5c6D0JO9kl58iKp3m37CHV&#xa;Sv9dEFLJtWSlXJgLLXCg0rcs8lI47ytF8WF28A4UZsrM+3IFLxFOuSLdxdoFF4yd&#xa;PyU0iO+aUMzlozT0aymoS1An/TDr6p8k9LbZusmXO65/rxrtW8kPyYFCtWtPtXFI&#xa;TOZFkBMDVQnRwWxdsQIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcDATALBgNV&#xa;HQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAAh1cYa3uoHkNb7vNdd0qwRk0Xk/&#xa;t+tXYeEF42t8wBkfQ1dTz3CLCJYQttzv0ffu3bIF+wwdl4hk16pB9nFEdjZTInsC&#xa;ERT2IoRwRm2LwLT3rBT2dcM3Z4VYVx3gwc3XV2Rb7oPqoEKQeYvHanz4OnURd0s3&#xa;fH9jyxnCXS7KdiJB4GOV8C5Vu3INqIoRL/KHMz6HLxUXTezVI4SSayyzHma/TzX6&#xa;w1lDDznr7pcv4XhEpbENBzte66Y/ZZ4CfZ4DJKLwJ++ZJtRT+8f2beO/odH6o4Gq&#xa;6rf4ZqDMffPufA/ZRVvooERDbOv6jXfTNu6hEaHzjeU2b0AJ9GV6dI6f8XI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="closed" reason="reset" reason_ttl="125"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="2692" rttvar="2840" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.8.15" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2025-09-25T14:27:26&#xa;Not valid after:  2055-09-25T14:27:26&#xa;MD5:     d147 10be 5f1d 7e06 e648 b325 7f19 edf7&#xa;SHA-1:   b73c 33d6 6794 ce61 e20d a1d5 e749 85ea 8b7d 14d4&#xa;SHA-256: 1505 dfc9 2b70 75df 44e8 363a 36ea 5fea a733 a9f5 170a c8bd a403 3370 41af e41f"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">A30949D9098DD9363D12839410FACEEB34FABA018C958D6D01DD09F7FD1D9796C8785C18B43FEE65B2CDC350CCDA78187D1A61085F56B49EF14E1EC05293FFC5229B1FEBF0CDCCD843787FA0A2249E0222CE26AC315A98AA01B0EAA65EE7EF805965C4C9FD6EEFE6745ED295F5EB5BBA01D81FF82AEF3D50AEAB78D5CC53D129</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-09-25T14:27:26</elem>
+<elem key="notAfter">2055-09-25T14:27:26</elem>
+</table>
+<elem key="md5">d14710be5f1d7e06e648b3257f19edf7</elem>
+<elem key="sha1">b73c33d66794ce61e20da1d5e74985ea8b7d14d4</elem>
+<elem key="sha256">1505dfc92b7075df44e8363a36ea5feaa733a9f5170ac8bda403337041afe41f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIB+zCCAWSgAwIBAgIQHyh/m/sS1ZpIf64GIb05LTANBgkqhkiG9w0BAQUFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjUwOTI1MTQyNzI2WhgPMjA1NTA5MjUxNDI3MjZaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAowlJ2QmN2TY9&#xa;EoOUEPrO6zT6ugGMlY1tAd0J9/0dl5bIeFwYtD/uZbLNw1DM2ngYfRphCF9WtJ7x&#xa;Th7AUpP/xSKbH+vwzczYQ3h/oKIkngIiziasMVqYqgGw6qZe5++AWWXEyf1u7+Z0&#xa;XtKV9etbugHYH/gq7z1Qrqt41cxT0SkCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBG&#xa;C1bcT7B+Y+oZiHGndN/JjgM71YVCQRgLui4iyL8bX2cpCkPN7rbmckKfvW7NXHkc&#xa;5YKNcLjfOdREPhooZKw+CfBRzdyqG6gb6RIgjgp3ySBtIGlE6P/Lle8yXg0h6du0&#xa;XUinJMF7Sg2OtaLP1iSk+oD7MMcNDjnK1dNauY+OFQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKDEFATEWAY.TEST03.COM.PH&#xa;Issuer: commonName=IDKDEFATEWAY.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2025-10-27T14:28:39&#xa;Not valid after:  2026-04-28T14:28:39&#xa;MD5:     3d83 ba21 4dd7 73d3 e887 faa6 5ddb 8393&#xa;SHA-1:   9e35 ab7d 2255 a57f f716 0957 d8a0 8373 61ef 3f36&#xa;SHA-256: 1e34 722a 31b7 81ce bf75 eb00 f281 2372 fad5 0629 afbc 5f92 ccde 411c 9ea6 e75e"><table key="subject">
+<elem key="commonName">IDKDEFATEWAY.TEST03.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDKDEFATEWAY.TEST03.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B8B31D49939FCB240B041C618BF3DE061079890AB5D60E01FEE67726EFE395BC2EDC5648E16D175185BCC55414324596B93C8FA8C896A5AB22D142B53CDA04B404BB5E7FA9BFFB6B6D1C344472F877ADB21E0CDDDF1C8EE98F62F75C5FDEB596F5EDE1D274C9A845F3BF8211F35659C5C4B96BA4AC8394F81EE3B87CEB7E8D0E22F24F6712A2F6CE8B9748864E0F21FCF7BDA9D624021EBD03E5754A4224D86204CE3FF269982E0957C5C78E017C2D1C7F91396F691964967115867C815AE82FFD4F25D0BF942293F6FFF6C6B5BA484EAB74DDE62FA68E4DBAA42293E75FEA54305E7020B56FB74A5EADA3CAC02DF0C5D2C8BBCA10AFF8A3205825510A8E7F93</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-10-27T14:28:39</elem>
+<elem key="notAfter">2026-04-28T14:28:39</elem>
+</table>
+<elem key="md5">3d83ba214dd773d3e887faa65ddb8393</elem>
+<elem key="sha1">9e35ab7d2255a57ff7160957d8a0837361ef3f36</elem>
+<elem key="sha256">1e34722a31b781cebf75eb00f2812372fad50629afbc5f92ccde411c9ea6e75e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC+DCCAeCgAwIBAgIQOQ6sKxgoT75Dkf/KOOnG4DANBgkqhkiG9w0BAQUFADAl&#xa;MSMwIQYDVQQDExpVU0JBVE1HQVRFV0FZLlVTQjA5LkNPTS5QSDAeFw0yNTEwMjcx&#xa;NDI4MzlaFw0yNjA0MjgxNDI4MzlaMCUxIzAhBgNVBAMTGlVTQkFUTUdBVEVXQVku&#xa;VVNCMDkuQ09NLlBIMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuLMd&#xa;SZOfyyQLBBxhi/PeBhB5iQq11g4B/uZ3Ju/jlbwu3FZI4W0XUYW8xVQUMkWWuTyP&#xa;qMiWpasi0UK1PNoEtAS7Xn+pv/trbRw0RHL4d62yHgzd3xyO6Y9i91xf3rWW9e3h&#xa;0nTJqEXzv4IR81ZZxcS5a6Ssg5T4HuO4fOt+jQ4i8k9nEqL2zouXSIZODyH8972p&#xa;1iQCHr0D5XVKQiTYYgTOP/JpmC4JV8XHjgF8LRx/kTlvaRlklnEVhnyBWugv/U8l&#xa;0L+UIpP2//bGtbpITqt03eYvpo5NuqQik+df6lQwXnAgtW+3Sl6to8rALfDF0si7&#xa;yhCv+KMgWCVRCo5/kwIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcDATALBgNV&#xa;HQ8EBAMCBDAwDQYJKoZIhvcNAQEFBQADggEBAG6sDsV/71spI7fuxhzBRyvnCUap&#xa;6ECSg5lg6ZlXefCdAI8aVl5TBYuYjAUXaWWGdVkjSNjXds7pvrTq0nLwtjBgBxwT&#xa;3debSPTfE3f1VGGkPLEBIPe67y2VPRgxiEDb2LD0J8ewjrljpnIJXNL5Khl3cexV&#xa;chwgRuqdnHVArea2m390KMqBbqRUZ6RiEAqkIzv6poi0ag4K3/VvyObMHfXtSmbQ&#xa;t30oLeKzBGG0CuNVlcaSp8Igh107K9T9CLSIhLiZBAoSHM1YTIaLSfw4uUUZAK3H&#xa;kmiZH4RUxIeaIafl5joxKiuEN7He8eMLGlkGtn+c3bLcTyeMqrWZzRcrBg4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="closed" reason="reset" reason_ttl="126"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="1834" rttvar="2465" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.8.243" addrtype="ipv4"/>
+<hostnames>
+<hostname name="IDKAMLDEV.TEST03.COM.PH" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2024-09-20T05:21:12&#xa;Not valid after:  2054-09-20T05:21:12&#xa;MD5:     02ce cceb 60ae 79ac ed25 9255 b7c5 2930&#xa;SHA-1:   feae e21e c4ac 6c3c 086a 00a8 2bea 0fc9 0e1e 8252&#xa;SHA-256: 45ae ffc1 9743 fe93 5e73 6a2d dbb6 b52c 68e5 8bd9 53bc 41e5 3190 ef9c 1cd1 6f49"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">B66AF225413BF8C39414247E35C34CF29BAB0DE46655197A73ED90DEC257DC90C296477159C2BBC7D7478ACB8294CE0897D193AAD86A571E6058320FD19B5ADB4A2F9360F255691BECB0C7BC7C4EF6518A61670433498910AD928E72BEA0486F5339544AA22C08D893E07580A23509445E5DB6B99D759BEADC40C5910AB245CF</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-20T05:21:12</elem>
+<elem key="notAfter">2054-09-20T05:21:12</elem>
+</table>
+<elem key="md5">02cecceb60ae79aced259255b7c52930</elem>
+<elem key="sha1">feaee21ec4ac6c3c086a00a82bea0fc90e1e8252</elem>
+<elem key="sha256">45aeffc19743fe935e736a2ddbb6b52c68e58bd953bc41e53190ef9c1cd16f49</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIB+zCCAWSgAwIBAgIQHjKWkEoA/ZdFVJ4tBEpjHzANBgkqhkiG9w0BAQUFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjQwOTIwMDUyMTEyWhgPMjA1NDA5MjAwNTIxMTJaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAtmryJUE7+MOU&#xa;FCR+NcNM8purDeRmVRl6c+2Q3sJX3JDClkdxWcK7x9dHisuClM4Il9GTqthqVx5g&#xa;WDIP0Zta20ovk2DyVWkb7LDHvHxO9lGKYWcEM0mJEK2SjnK+oEhvUzlUSqIsCNiT&#xa;4HWAojUJRF5dtrmddZvq3EDFkQqyRc8CAwEAATANBgkqhkiG9w0BAQUFAAOBgQAQ&#xa;ELjuDJ/OLc0CatDH4Ydgdj6E/MS7aK8hpazZBRlJ7U76+Hpee15HxyXtThVxhvZr&#xa;gt+6kqLYURih5G1o0/BHCwdhzxU+3YdEczPGoOj0ffyQ+vn0JsiFYnKcXoBkKvyk&#xa;VWVyRCLj7cFxKATtHjXSd5Q0BkWu/4Iu3f+qjXnX4w==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKAMLDEV.TEST03.COM.PH&#xa;Issuer: commonName=IDKAMLDEV.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2026-01-18T16:00:02&#xa;Not valid after:  2026-07-20T16:00:02&#xa;MD5:     5ab9 543a 8920 f295 837e 0994 89bf f3c5&#xa;SHA-1:   9315 d5c6 5c37 e24c b306 cbca ce45 faf2 f2d7 17a5&#xa;SHA-256: ffc3 88a0 2100 d837 bad2 8313 e0c1 0032 e957 0ed8 0b16 5a5c a4fa a1d8 6e05 ce69"><table key="subject">
+<elem key="commonName">IDKAMLDEV.TEST03.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDKAMLDEV.TEST03.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BCF486A5FA9EEEE5E9662BBD3ABBDD6B29E8B8BF27E5A8DE5966BBC131B316E2A616E10CA1608C366C48E62E6287CA3CB94D2244EA2DD3B96715922A130AD59BCEED6145D431A337D6FA155F95FC562DD9C92FD41E250D3291D95731B274E607DFE81F8F5C5657A757553112690E95DA49E00FA388FDB56754A3A240D509E93B17BF533CB18D7B260A26AC4DAD01CC99F61E0C11AF8B1E6CE65FD4FACA81C4329F69E7EE3883C13697035FFC7DE3198DF4B32DA7521EF1547EE0E492FCF39FF5285FFE57273E188C8F816E7674DEFC2D052CE7C01DDC6BA4EEEEACC097C07D3ACD6C456D5501DB7502B6967A5231E1A5C7BCA9B14FA093876D3E54FA43BB6323</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-01-18T16:00:02</elem>
+<elem key="notAfter">2026-07-20T16:00:02</elem>
+</table>
+<elem key="md5">5ab9543a8920f295837e099489bff3c5</elem>
+<elem key="sha1">9315d5c65c37e24cb306cbcace45faf2f2d717a5</elem>
+<elem key="sha256">ffc388a02100d837bad28313e0c10032e9570ed80b165a5ca4faa1d86e05ce69</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC8DCCAdigAwIBAgIQFI4opgeeKoNPA0JgwUiKVzANBgkqhkiG9w0BAQUFADAh&#xa;MR8wHQYDVQQDExZVU0JBTUxERVYuVVNCMDkuQ09NLlBIMB4XDTI2MDExODE2MDAw&#xa;MloXDTI2MDcyMDE2MDAwMlowITEfMB0GA1UEAxMWVVNCQU1MREVWLlVTQjA5LkNP&#xa;TS5QSDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALz0hqX6nu7l6WYr&#xa;vTq73Wsp6Li/J+Wo3llmu8ExsxbiphbhDKFgjDZsSOYuYofKPLlNIkTqLdO5ZxWS&#xa;KhMK1ZvO7WFF1DGjN9b6FV+V/FYt2ckv1B4lDTKR2VcxsnTmB9/oH49cVlenV1Ux&#xa;EmkOldpJ4A+jiP21Z1SjokDVCek7F79TPLGNeyYKJqxNrQHMmfYeDBGvix5s5l/U&#xa;+sqBxDKfaefuOIPBNpcDX/x94xmN9LMtp1Ie8VR+4OSS/POf9Shf/lcnPhiMj4Fu&#xa;dnTe/C0FLOfAHdxrpO7urMCXwH06zWxFbVUB23UCtpZ6UjHhpce8qbFPoJOHbT5U&#xa;+kO7YyMCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQw&#xa;MA0GCSqGSIb3DQEBBQUAA4IBAQBKio04eNXnFRKMdnbmC50lR+tVRYzw0cV6dEzb&#xa;T/O95APT3DmfsphqBU35cgrLeKtb08xgVojfE5YJJrQXNBtkh0vN+1Zusfimn76Y&#xa;J6PpffGwFSa6TbnCSzYNxpODOnOFYTOFkaZXPWGxK4Onasl6d8nJQNCVVjqwT5LD&#xa;p2ByM5nYIKmxM8cPoHpRmscMwg5ydvOWe/69Bml2GpygCiMQShYSZeEsYLzclxwT&#xa;aGnkIWgONkSUuQh7ofJh0i+5btBYMZ2I5hGYsKNrvoRDchCG7Xmqo/OLW/8vKU4r&#xa;JDhPptjaoXT3HoMdjxNyMYOt6qG2YERS8hK3IQy/p+FigLNR&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="closed" reason="reset" reason_ttl="126"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="1275" rttvar="2217" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.8.244" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2025-09-25T02:32:28&#xa;Not valid after:  2055-09-25T02:32:28&#xa;MD5:     abfd 7662 a2b9 2c7f 592a 0b6f 5275 d7b1&#xa;SHA-1:   fc53 0a13 eb65 9b5e 4fef e65f c68b 89ef d8a3 5fc8&#xa;SHA-256: e0a7 9331 30a0 bbd5 bd58 a750 84d9 c234 7ba8 10c3 9387 7dbe 0549 b23b c3aa 7425"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">C24ECD60A2829A6DF1D7D2818BDC003D0F16AAB1B5363BA1A14E00BEC665947E2D2D9DA1F4760CFA8E12066156D403FB58015F128321903BDBE38506159C9EBE8DF87D758482265C05EF1C8B81051397C5EB04F594499E70D882791753EB9DCE4C7522149732C3F81808E5B61C17E92139319AD6751ECADB5E380689F30A7BAF</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-09-25T02:32:28</elem>
+<elem key="notAfter">2055-09-25T02:32:28</elem>
+</table>
+<elem key="md5">abfd7662a2b92c7f592a0b6f5275d7b1</elem>
+<elem key="sha1">fc530a13eb659b5e4fefe65fc68b89efd8a35fc8</elem>
+<elem key="sha256">e0a7933130a0bbd5bd58a75084d9c2347ba810c393877dbe0549b23bc3aa7425</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIB+zCCAWSgAwIBAgIQeDLHMWmyMJFDW521PeHl7TANBgkqhkiG9w0BAQUFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjUwOTI1MDIzMjI4WhgPMjA1NTA5MjUwMjMyMjhaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwk7NYKKCmm3x&#xa;19KBi9wAPQ8WqrG1NjuhoU4AvsZllH4tLZ2h9HYM+o4SBmFW1AP7WAFfEoMhkDvb&#xa;44UGFZyevo34fXWEgiZcBe8ci4EFE5fF6wT1lEmecNiCeRdT653OTHUiFJcyw/gY&#xa;COW2HBfpITkxmtZ1HsrbXjgGifMKe68CAwEAATANBgkqhkiG9w0BAQUFAAOBgQC4&#xa;qCQ7C7Xe5jYCQ62mG5+2P/o8rJFEDkLYNj+R8vxt3NdtpcxyyKoQFogbLQZqEuTw&#xa;aY1c/xN2B5ypdLowNmRn376y0iUJbcnM65C42hQWV7F1PAmWG42XO9z6+kY/fgrD&#xa;y6eiUwlQseCp7nJ/yN6vSDMSN70IQZ+Ie1yKbyotpQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKAMLAHODB.TEST03.COM.PH&#xa;Issuer: commonName=IDKAMLAHODB.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2026-01-17T16:00:00&#xa;Not valid after:  2026-07-19T16:00:00&#xa;MD5:     58d7 6b88 35aa b815 af29 98cb b8d3 cc7d&#xa;SHA-1:   1c8f 3512 d5a1 cb63 398c 5b7d 186b 07f3 0765 0b89&#xa;SHA-256: 4be9 66bd ddb9 3046 559b f42a a952 a18b 1871 e4bf 9d52 3bf0 4e2f acab f696 801d"><table key="subject">
+<elem key="commonName">IDKAMLAHODB.TEST03.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDKAMLAHODB.TEST03.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">DB501E98054336A6991F108CF2F05A9DB2393CAEAE9AAF97DCC893654AE9BFE6B1971BE66E96542588A592F7CB226681B55A3CA31AD0FEC45758579415195278485BC76786325B30E56D00EF86E420D01C104397A6F3153D61AD15DE1FEB5EF0B1CC4037171B19F5D4B631526B848EC8EAFF52AD5624A81D7C8679BE3C6F21A6610657B2350CF78DEB75FA9F18ADB731DB047232E2064D68385EEC7B9E452796BA400D8577BDDDBF66DB2E5141643642A8611A9CBBC63189A5E1766CCB54F52B1A999F68F557CE1B071DE6CD037CA9A6EB5DDFD9EDBF2C435427F985955981920E3D21E4165953F4DBF3A927C289C3595AB8F1906F83AEE465B914AD8EE7A971</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-01-17T16:00:00</elem>
+<elem key="notAfter">2026-07-19T16:00:00</elem>
+</table>
+<elem key="md5">58d76b8835aab815af2998cbb8d3cc7d</elem>
+<elem key="sha1">1c8f3512d5a1cb63398c5b7d186b07f307650b89</elem>
+<elem key="sha256">4be966bdddb93046559bf42aa952a18b1871e4bf9d523bf04e2facabf696801d</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC9DCCAdygAwIBAgIQYohEKE5JMIdPN/FUIJjNOjANBgkqhkiG9w0BAQUFADAj&#xa;MSEwHwYDVQQDExhVU0JBTUxBSE9EQi5VU0IwOS5DT00uUEgwHhcNMjYwMTE3MTYw&#xa;MDAwWhcNMjYwNzE5MTYwMDAwWjAjMSEwHwYDVQQDExhVU0JBTUxBSE9EQi5VU0Iw&#xa;OS5DT00uUEgwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDbUB6YBUM2&#xa;ppkfEIzy8Fqdsjk8rq6ar5fcyJNlSum/5rGXG+ZullQliKWS98siZoG1WjyjGtD+&#xa;xFdYV5QVGVJ4SFvHZ4YyWzDlbQDvhuQg0BwQQ5em8xU9Ya0V3h/rXvCxzEA3FxsZ&#xa;9dS2MVJrhI7I6v9SrVYkqB18hnm+PG8hpmEGV7I1DPeN63X6nxittzHbBHIy4gZN&#xa;aDhe7HueRSeWukANhXe93b9m2y5RQWQ2QqhhGpy7xjGJpeF2bMtU9SsamZ9o9VfO&#xa;Gwcd5s0DfKmm613f2e2/LENUJ/mFlVmBkg49IeQWWVP02/OpJ8KJw1lauPGQb4Ou&#xa;5GW5FK2O56lxAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQE&#xa;AwIEMDANBgkqhkiG9w0BAQUFAAOCAQEAU2sCSqtnc+kiJaxYcuZ6QIPU+WLaliXj&#xa;OMxNVp4VYIm+cD4NdWZEkmX+WDMWQk9xRxHzQqvP2rVNy9kMafOhtk0iPCqCMwEO&#xa;/gtYMZ/TwQEK9jQoyVlzIQAYQvJ/Jl3Az3bGqu+l697+3BGltylhDveIjozbIWBx&#xa;NLVZ2DmcStesm8DQc6YsWMPiKkmFQqZacFqXQjmC4SzX5tbuWkgubqdb3fyyz5Tc&#xa;TPXVlPVD3uaEEN2NgR7PetEz//MqAa1T9KaDiDiCrw/eLR1GkOxt51GkARhFIPaB&#xa;5ve00CcdKOKWzLkAE+AhsTiTyz9Yp3t24D4Z369fkcWTT7oDEgjUxw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="closed" reason="reset" reason_ttl="126"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="1218" rttvar="2258" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.8.49" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2025-02-02T06:10:41&#xa;Not valid after:  2055-02-02T06:10:41&#xa;MD5:     9a31 7c0a 9e8f 0d66 2507 91a7 4de6 e4a8&#xa;SHA-1:   40b4 cce6 06b4 8d96 716c f8eb a687 c727 64d2 1320&#xa;SHA-256: 3b97 2a73 aeb5 bfa7 c80d d69f 85d1 b623 d16e 821a 7f8a 9ff4 82a3 ef06 8d6a a6a9"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">985E6EE72CB74762694C5E9B2F8A99180ACEC2BCE70E9665360218EE056CAE60D26F09E59C62F0A57430F0A74A684E72093C68246EA28827A3FFCF7F8B973AE5DF7F36003C133C791ED8E1F57BA78B43B77944E85F3ECA496FFDED10FB6A2CCF33DB9C7334D2D40051835A5B29FB7FBBD20C3BD69AC5FF5E100DAF4C775E2D3D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-02-02T06:10:41</elem>
+<elem key="notAfter">2055-02-02T06:10:41</elem>
+</table>
+<elem key="md5">9a317c0a9e8f0d66250791a74de6e4a8</elem>
+<elem key="sha1">40b4cce606b48d96716cf8eba687c72764d21320</elem>
+<elem key="sha256">3b972a73aeb5bfa7c80dd69f85d1b623d16e821a7f8a9ff482a3ef068d6aa6a9</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIB+zCCAWSgAwIBAgIQXcRUNAgugpxMibABc00AdDANBgkqhkiG9w0BAQUFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjUwMjAyMDYxMDQxWhgPMjA1NTAyMDIwNjEwNDFaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAmF5u5yy3R2Jp&#xa;TF6bL4qZGArOwrznDpZlNgIY7gVsrmDSbwnlnGLwpXQw8KdKaE5yCTxoJG6iiCej&#xa;/89/i5c65d9/NgA8Ezx5Htjh9Xuni0O3eUToXz7KSW/97RD7aizPM9ucczTS1ABR&#xa;g1pbKft/u9IMO9aaxf9eEA2vTHdeLT0CAwEAATANBgkqhkiG9w0BAQUFAAOBgQBP&#xa;h8lTZYI2AWEfIuvf3PEgs22eFRYby4mhk9vujc5c5cV4Uk0tThihTzGGaTURRVEU&#xa;Y44k6mgDZYTHpAdCsPMTMeSYPderLil0RcmzGTa1RaJnYRwHSw/c1Fk3DtIBiACp&#xa;1kmh5MIrIhXpRgMJtXT1Cp4HPeSJ36sOmFBDgpgJtg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKHRISHO&#xa;Issuer: commonName=IDKHRISHO&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-12-02T12:46:51&#xa;Not valid after:  2026-06-03T12:46:51&#xa;MD5:     ac5e e3c5 5a73 86fc 299f 870e f284 ae84&#xa;SHA-1:   241e e1c0 1fee 664c 0081 3c50 44e3 def0 b517 e4e1&#xa;SHA-256: edc5 b251 3ab8 fbeb da74 d1db 751a e2c8 a5c5 392c ac4a 2629 2e26 72c0 52c3 f4a2"><table key="subject">
+<elem key="commonName">IDKHRISHO</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDKHRISHO</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B5E803188BFBFE8B504213DBE9BCB63544F733DA13BF7CEBD591A40E0A4D9366A26E79A287A792595982F473F12F4986D15342E43BEA6DC4F2BB9AC12A67527706B739538C4B0F87E4BC7B7A5F427DECC20E42DE03B9717B07E01E14F3B8DE6A0335F6504713F62F89FC64AFA2A9D0BD8244904EC57DAFEAD7C5B0DFFD521C262E4EFC59D12DA93F8644818DDA20DC96F5304E1E4110522C0272CD4BADD7CBA8115C11CE61B8D043EF78D68AF448B4351683313D3185F67C4968461D65035F5E245CE1C82D7EB53BEF975A889994720A54281177E9098C3B7E6B790131DAAB187F45ABE014433C9E0F63E6C269F76A36462FB66D3747AA8491B91E50A5A0FF35</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-12-02T12:46:51</elem>
+<elem key="notAfter">2026-06-03T12:46:51</elem>
+</table>
+<elem key="md5">ac5ee3c55a7386fc299f870ef284ae84</elem>
+<elem key="sha1">241ee1c01fee664c00813c5044e3def0b517e4e1</elem>
+<elem key="sha256">edc5b2513ab8fbebda74d1db751ae2c8a5c5392cac4a26292e2672c052c3f4a2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC1jCCAb6gAwIBAgIQEQ8jEqN5XbhFRGOcVnr4vTANBgkqhkiG9w0BAQsFADAU&#xa;MRIwEAYDVQQDEwlVU0JIUklTSE8wHhcNMjUxMjAyMTI0NjUxWhcNMjYwNjAzMTI0&#xa;NjUxWjAUMRIwEAYDVQQDEwlVU0JIUklTSE8wggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQC16AMYi/v+i1BCE9vpvLY1RPcz2hO/fOvVkaQOCk2TZqJueaKH&#xa;p5JZWYL0c/EvSYbRU0LkO+ptxPK7msEqZ1J3Brc5U4xLD4fkvHt6X0J97MIOQt4D&#xa;uXF7B+AeFPO43moDNfZQRxP2L4n8ZK+iqdC9gkSQTsV9r+rXxbDf/VIcJi5O/FnR&#xa;Lak/hkSBjdog3Jb1ME4eQRBSLAJyzUut18uoEVwRzmG40EPveNaK9Ei0NRaDMT0x&#xa;hfZ8SWhGHWUDX14kXOHILX61O++XWoiZlHIKVCgRd+kJjDt+a3kBMdqrGH9Fq+AU&#xa;QzyeD2Pmwmn3ajZGL7ZtN0eqhJG5HlCloP81AgMBAAGjJDAiMBMGA1UdJQQMMAoG&#xa;CCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEAXO6xues9&#xa;Isg3FLdeq+ThxM6p/D/biLc8h2ELPnSHFy0AmlCMwtMsUs34Q9aqgiZfczrLIuwd&#xa;iPvaMdV7WbDGfX76uDK3rTOuLsrcyPQg5z15NyKA0fsZihQlYHXO6DRfJmm/2PRB&#xa;kWGCmaF5LeIKeLmDlJ7LLxG6sIiOTBaVuh+qz1HX5BcZjF3fbZg5sWSrPWSIzL2S&#xa;ydXogvUdoRMJAlEFqXhoDVZzvbRnGU3nPS6hT9fVfS/FuFwA0T2TgSoZpf4SRqr4&#xa;hMsXL0hDiCBPGVrG0TUtHoOfl7V12fis2hs4eZzyp9sks7a4ACWM/y29cjWBfe1T&#xa;q/8vT3DUR7pZ4A==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="closed" reason="reset" reason_ttl="126"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="1119" rttvar="2226" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.9.13" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2025-06-18T09:36:07&#xa;Not valid after:  2055-06-18T09:36:07&#xa;MD5:     cb3d a11b 5d44 b967 fca3 4a91 2f8d 1466&#xa;SHA-1:   4847 c630 7776 d6f0 19e8 e570 d32c 51d1 9dad 5710&#xa;SHA-256: 87fb 843a fa69 cff3 8ba0 c862 e846 8d82 919b 8cc0 ef3e b892 aa95 81cc 0571 9341"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">EF16CF64C916C4E215022DF77EB13A47A967599A39B5E93C89AEE63FF418F8512974E9528280093BF5CAECE4023CE4CA39B3A808BF50378446413F79D786A0A84EB5C1457A68D46C05E24B41C6485E180483B969F50F3DA0B2011809D48083DD2AE42C020D729B530D7C5D81E1A59008F0337D7CA43103936D755C7DBF976605</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-06-18T09:36:07</elem>
+<elem key="notAfter">2055-06-18T09:36:07</elem>
+</table>
+<elem key="md5">cb3da11b5d44b967fca34a912f8d1466</elem>
+<elem key="sha1">4847c6307776d6f019e8e570d32c51d19dad5710</elem>
+<elem key="sha256">87fb843afa69cff38ba0c862e8468d82919b8cc0ef3eb892aa9581cc05719341</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIB+zCCAWSgAwIBAgIQFE/3tTIxdbZIvzA+Ky2yyTANBgkqhkiG9w0BAQUFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjUwNjE4MDkzNjA3WhgPMjA1NTA2MTgwOTM2MDdaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA7xbPZMkWxOIV&#xa;Ai33frE6R6lnWZo5tek8ia7mP/QY+FEpdOlSgoAJO/XK7OQCPOTKObOoCL9QN4RG&#xa;QT9514agqE61wUV6aNRsBeJLQcZIXhgEg7lp9Q89oLIBGAnUgIPdKuQsAg1ym1MN&#xa;fF2B4aWQCPAzfXykMQOTbXVcfb+XZgUCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBR&#xa;1/LeAoT1zspszuLy2qtrp4+QMKxOEcecy1XorM+5a+/41nUuxDOPa+SvnbWXYOe4&#xa;t5ROXx2HGq+ghSZf9aTwCieTL6ycX0i37C+IZZwJJSHm+p/PyYulu6+6dfhksF9p&#xa;8RuLh3pcJVud2yqBWG63sFAuFHuoxQqUgY4ZCVPZKw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKHOAVSVR.TEST03.COM.PH&#xa;Issuer: commonName=IDKHOAVSVR.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-11-15T18:38:15&#xa;Not valid after:  2026-05-17T18:38:15&#xa;MD5:     d04b 3191 da1f 72ab ab14 0558 ef54 49b7&#xa;SHA-1:   bda5 1514 3a50 15b9 7136 9037 b5d3 81eb a104 90e6&#xa;SHA-256: 9b17 8676 f007 b11f 8256 0c27 9ad3 bd39 e319 72d7 d149 509f 0055 7db2 a1cf 757a"><table key="subject">
+<elem key="commonName">IDKHOAVSVR.TEST03.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDKHOAVSVR.TEST03.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C03975A5C54D1379052678C572BA0EA582882C23C14EF8EB11DBE118179442C74186CBE918C608A8C154F31F567505CD125CEC4FBB4B728327575CE19185707330EA79463D36734A8CF95566E774301EBFB13941FFB73EE508448F753DDABC3DE341B0A90A7B6A647A1F90CC90CE59B9A6A3E48A9FEB6A7591516EF96372BA66BE74444648829799EE5F9412AC2C6E4768D9E44CB5B11F55C318F6A9FAECF3184F9C34E46B7CA2D7AA1687B4F38D571556D73578A0BC897345A859A25D2557105240D33E928CAFD88CC2A0CA7B823F5A80E935D5841E0FC91BA82BFEAA2814884146A24D408B652D5159B6BA4567F7B0696766F2E3D43E0719D63C0CA21B482B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-11-15T18:38:15</elem>
+<elem key="notAfter">2026-05-17T18:38:15</elem>
+</table>
+<elem key="md5">d04b3191da1f72abab140558ef5449b7</elem>
+<elem key="sha1">bda515143a5015b971369037b5d381eba10490e6</elem>
+<elem key="sha256">9b178676f007b11f82560c279ad3bd39e31972d7d149509f00557db2a1cf757a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC8jCCAdqgAwIBAgIQffLQ4CCAFrhBXgBVMAso+zANBgkqhkiG9w0BAQsFADAi&#xa;MSAwHgYDVQQDExdVU0JIT0FWU1ZSLlVTQjA5LkNPTS5QSDAeFw0yNTExMTUxODM4&#xa;MTVaFw0yNjA1MTcxODM4MTVaMCIxIDAeBgNVBAMTF1VTQkhPQVZTVlIuVVNCMDku&#xa;Q09NLlBIMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDl1pcVNE3kF&#xa;JnjFcroOpYKILCPBTvjrEdvhGBeUQsdBhsvpGMYIqMFU8x9WdQXNElzsT7tLcoMn&#xa;V1zhkYVwczDqeUY9NnNKjPlVZud0MB6/sTlB/7c+5QhEj3U92rw940GwqQp7amR6&#xa;H5DMkM5Zuaaj5Iqf62p1kVFu+WNyuma+dERGSIKXme5flBKsLG5HaNnkTLWxH1XD&#xa;GPap+uzzGE+cNORrfKLXqhaHtPONVxVW1zV4oLyJc0WoWaJdJVcQUkDTPpKMr9iM&#xa;wqDKe4I/WoDpNdWEHg/JG6gr/qooFIhBRqJNQItlLVFZtrpFZ/ewaWdm8uPUPgcZ&#xa;1jwMohtIKwIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMC&#xa;BDAwDQYJKoZIhvcNAQELBQADggEBAERbtMIGnY8/3Er1UcASiRrO8LVFlhWQitlw&#xa;5g4YB4w/ZYW7uckqSMzNp4ALR/w/kfjDNx9GfhsgRCwFG5aI0L6hVXzWbCidaOeW&#xa;3NOtl9vCUQDLTW8iGxUrfnt+/Aa1dCj1VtHY3hM1+j/n8MIpVurhfoB3QQ/5Y2gy&#xa;sOYvLHhEwSQBc13/tAH9Xdm9BLh7yUQjwuvgffWxJbeAfDE69gK7/7rataXDPfN/&#xa;joIbb6lxYdRKALWwb9SrFKQxJuy979QwjTONP8/B4a4+q+ONSBRSXZZ4ej3UfF3f&#xa;puae3H8NvEav7l1/GaxpNXRbksDW2kTqTYJ4McBOy7nNo/DfjcU=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="1225" rttvar="2887" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.9.170" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ms-sql-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKNetMon.TEST.COM.PH&#xa;Issuer: commonName=IDKNetMon.TEST.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-11-30T07:09:56&#xa;Not valid after:  2026-06-01T07:09:56&#xa;MD5:     2c6f 79d9 0050 b4e7 addd 664e a5d1 46c8&#xa;SHA-1:   66ea cdde dfaf 5947 122e e3da 0647 aae7 34c3 6022&#xa;SHA-256: b2d8 567e 1b59 e263 de3a 85df 82cd ea6e 36de d172 6c82 8bbf 1d28 c6fc 940c a5a4"><table key="subject">
+<elem key="commonName">IDKNetMon.TEST.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDKNetMon.TEST.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">9310F2931579041299B450AF08815373D64A21DEF04EE87146187B5AB56AE347D64EEC43EBAE8C429D1B462F5968EB1390DA2E47772728F82529FDD7697669EAC12E715DB0C0C2D227FAFAE16691DC9AC8E372DEFB528189A9CD95B1163E9167FEE41D704C18AD94DD07B91443CFA79B5882AB18F36AE9D3DBFC68F66893D1025169DC6F3E619B6FC9B4B1D1B7E23B4F89CB09504F4E88FACE4CDA35BAF4ABB229198C79A2DC1CDBFBC5DE996873DE594C09E9DA549AD9C5BEB9536F81F1D1BD621A9AFD7E98B1B1CC87FAF5DAD2F62653D1C75C15353CB270F03F611CFE70711085F06EC4BF29C76A8B20F99F07BE4CD5FF4CF1A4DA5750BC1B9C8CE3ABB37F</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-11-30T07:09:56</elem>
+<elem key="notAfter">2026-06-01T07:09:56</elem>
+</table>
+<elem key="md5">2c6f79d90050b4e7addd664ea5d146c8</elem>
+<elem key="sha1">66eacddedfaf5947122ee3da0647aae734c36022</elem>
+<elem key="sha256">b2d8567e1b59e263de3a85df82cdea6e36ded1726c828bbf1d28c6fc940ca5a4</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC8DCCAdigAwIBAgIQbeVi9Sv4gJNEOG2JnZk57jANBgkqhkiG9w0BAQsFADAh&#xa;MR8wHQYDVQQDExZVU0JOZXRNb24uVVNCMDguQ09NLlBIMB4XDTI1MTEzMDA3MDk1&#xa;NloXDTI2MDYwMTA3MDk1NlowITEfMB0GA1UEAxMWVVNCTmV0TW9uLlVTQjA4LkNP&#xa;TS5QSDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJMQ8pMVeQQSmbRQ&#xa;rwiBU3PWSiHe8E7ocUYYe1q1auNH1k7sQ+uujEKdG0YvWWjrE5DaLkd3Jyj4JSn9&#xa;12l2aerBLnFdsMDC0if6+uFmkdyayONy3vtSgYmpzZWxFj6RZ/7kHXBMGK2U3Qe5&#xa;FEPPp5tYgqsY82rp09v8aPZok9ECUWncbz5hm2/JtLHRt+I7T4nLCVBPToj6zkza&#xa;Nbr0q7IpGYx5otwc2/vF3ploc95ZTAnp2lSa2cW+uVNvgfHRvWIamv1+mLGxzIf6&#xa;9drS9iZT0cdcFTU8snDwP2Ec/nBxEIXwbsS/KcdqiyD5nwe+TNX/TPGk2ldQvBuc&#xa;jOOrs38CAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQw&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQAkSr39YQlyJuKOH/Z4my4lSuDi9o0GK9hpZoi3&#xa;zgkh/fL6/WVgXq7hoUeT/pAbAgcy+PogAuMGeUEUX12RyE3pdHMS6p/lsE9B41au&#xa;K1f+LzV59aLlHaJxUVdPF7MVbALuU2ws2JG7DuW84Q6gJybv30cq6gdks/ZfsRPw&#xa;aiNO8DoAxAjc8HDVNxBKeTN70R8D5VGJSzqCU9jqaU/0jy7960GHE7UpmdDMCN7L&#xa;gbF8ka+trUluEdWq/2Vpeb86kAXcu66Im9mlkkGH9P6baS5nPZfUfi2TtF4rzqv2&#xa;fosF037HxnBKJXvuv/9KdO6vL9yaTJMpMaIkpFdmASRXdEHE&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="1455" rttvar="3805" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697914"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.9.174" addrtype="ipv4"/>
+<hostnames>
+<hostname name="HOBBDMDJ.TEST.COM.PH" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="closed" reason="reset" reason_ttl="126"/><service name="ms-sql-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDKCICSH0.TEST03.COM.PH&#xa;Issuer: commonName=IDKCICSH0.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2025-12-05T08:08:53&#xa;Not valid after:  2026-06-06T08:08:53&#xa;MD5:     0c16 996f d7b6 5931 e08c 208f f918 877e&#xa;SHA-1:   3511 1f2b 1418 1448 9bad 66b0 5d98 db0c 7052 b169&#xa;SHA-256: c9b8 61c9 0f71 65fb 20a2 d57f 39e1 a3bd 9072 7147 d4fe 080d a4ef abd9 4e8e 0470"><table key="subject">
+<elem key="commonName">IDKCICSH0.TEST03.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDKCICSH0.TEST03.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AAA2E9C779C4D95E7798C1C59C15CCF6CFA49E45FD65487BBCD1C74D1BA874656556DC9A1A312439C9FA3CB42FA0FCE5EDBDDB9D3590BA12D2D21AB8A13C3E0922791064FF6ABC4FE85E93814C73EDE160F96C8DE8D77D70608A71F520657877505CB5244CE2F7012A72F49642B4163007849ED489161312AAFA5EFB0B5AAFF3F2ACB4476D8EF08B3E9AA9204B83962733E4DB225D69ABB539545BC82D910CE1146E214137AEEEB0E5221508D27C52010FCEB2EA1F953640CE165CFAFCE57C1D736C71A1CC72471F44ACA4B9FAE77F4E1AD67FEC03A7EE087AAFA03D964890875238EB28E91FA936D4CEFB8BBC793BD51CFB90E38C48F3986F9AC06418FD4BA9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-12-05T08:08:53</elem>
+<elem key="notAfter">2026-06-06T08:08:53</elem>
+</table>
+<elem key="md5">0c16996fd7b65931e08c208ff918877e</elem>
+<elem key="sha1">35111f2b141814489bad66b05d98db0c7052b169</elem>
+<elem key="sha256">c9b861c90f7165fb20a2d57f39e1a3bd90727147d4fe080da4efabd94e8e0470</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC8DCCAdigAwIBAgIQKLvgcosgq6BEo6i82qAskzANBgkqhkiG9w0BAQUFADAh&#xa;MR8wHQYDVQQDExZVU0JDSUNTSDAuVVNCMDkuQ09NLlBIMB4XDTI1MTIwNTA4MDg1&#xa;M1oXDTI2MDYwNjA4MDg1M1owITEfMB0GA1UEAxMWVVNCQ0lDU0gwLlVTQjA5LkNP&#xa;TS5QSDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKqi6cd5xNled5jB&#xa;xZwVzPbPpJ5F/WVIe7zRx00bqHRlZVbcmhoxJDnJ+jy0L6D85e292501kLoS0tIa&#xa;uKE8PgkieRBk/2q8T+hek4FMc+3hYPlsjejXfXBginH1IGV4d1BctSRM4vcBKnL0&#xa;lkK0FjAHhJ7UiRYTEqr6XvsLWq/z8qy0R22O8Is+mqkgS4OWJzPk2yJdaau1OVRb&#xa;yC2RDOEUbiFBN67usOUiFQjSfFIBD86y6h+VNkDOFlz6/OV8HXNscaHMckcfRKyk&#xa;ufrnf04a1n/sA6fuCHqvoD2WSJCHUjjrKOkfqTbUzvuLvHk71Rz7kOOMSPOYb5rA&#xa;ZBj9S6kCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQw&#xa;MA0GCSqGSIb3DQEBBQUAA4IBAQASFpUpNh9blxWSvBBJKK9GFpQZvLwasbH2yzM1&#xa;AaZ8MdUV7ox9wzl2rrrgzPUcOw42ghiUViRUgHBkDz4erXWOi0Pn2N4JNRrT9OQP&#xa;fSNZXxveT1jw9h4UhYTMuzY/vf4Jbd3/Wkj7I99foyQ1EU76Hdbbi+eWENnSsVS3&#xa;9NBC+8PziudGWUecdHqfy0InxooZsgmXplGWUR8MlmGDdj0DW5ss23GSkj3E++74&#xa;fBYDh15rtQNZeCk8COxeWji4CNJ+qlfjwSaiJ8QLlZxBn3H5DJxuqIzGLxKWwFx2&#xa;kvOEBSS0GnlQyuaRMhAGALelJ2+nRLsIOQqZBX4depy6DT2B&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="1416" rttvar="2217" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.9.175" addrtype="ipv4"/>
+<hostnames>
+<hostname name="WHOTHIS.TEST03.COM.PH" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=WHOTHIS.TEST03.COM.PH&#xa;Issuer: commonName=WHOTHIS.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2025-09-09T04:43:52&#xa;Not valid after:  2026-09-09T00:00:00&#xa;MD5:     ac27 9220 b5bb 33c2 57a1 fd0b fea8 5d5b&#xa;SHA-1:   b4b3 ac66 6e02 172f c063 c0a4 3e67 a99c 9239 53dc&#xa;SHA-256: 0e52 8bd3 3bb5 e573 9d72 1ebf c68c 2245 eecc e61a ffd3 01cd 0b15 d9d3 1c2a 4d84"><table key="subject">
+<elem key="commonName">WHOTHIS.TEST03.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">WHOTHIS.TEST03.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BCDA4B54CAD1B59E284CB8C9D77433BB7974C8A833FBCE0D512E7AE9F0CB8943200954A24B7C4372165146B7EC8E5DCB3FCB551673A6752EF76DAAD48177081F102A1B11444E86DD02B7DB824518788647C933AFA996900C7D5DD3C09C1B2A57EB1E301135A6C72DBEBB7C9810BA7E1E47B2C7A646358AAB9DD751BF2677027C529B48BC9C9A8066A96428689B2A468E9A899E698C32EB85FF80EA36348533835A0785282AB0E3E4D8E3D69266F4DAAE998CE02ADCEB9D3E0451B8C8FF82F28F43288145193DA974644D2CD7BED2E8747A3BBE85B794B1E6EF96AD20C66CB6295A04E73FFFF484EE027408FD1D8736E17F112D332E2CCDA09F7DC3960CD6BECB</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-09-09T04:43:52</elem>
+<elem key="notAfter">2026-09-09T00:00:00</elem>
+</table>
+<elem key="md5">ac279220b5bb33c257a1fd0bfea85d5b</elem>
+<elem key="sha1">b4b3ac666e02172fc063c0a43e67a99c923953dc</elem>
+<elem key="sha256">0e528bd33bb5e5739d721ebfc68c2245eecce61affd301cd0b15d9d31c2a4d84</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC9DCCAdygAwIBAgIQF7HRTXJjHZtNMzGP2A4XgTANBgkqhkiG9w0BAQUFADAj&#xa;MSEwHwYDVQQDExhEQldBUkVIT1VTRS5VU0IwOS5DT00uUEgwHhcNMjUwOTA5MDQ0&#xa;MzUyWhcNMjYwOTA5MDAwMDAwWjAjMSEwHwYDVQQDExhEQldBUkVIT1VTRS5VU0Iw&#xa;OS5DT00uUEgwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC82ktUytG1&#xa;nihMuMnXdDO7eXTIqDP7zg1RLnrp8MuJQyAJVKJLfENyFlFGt+yOXcs/y1UWc6Z1&#xa;LvdtqtSBdwgfECobEUROht0Ct9uCRRh4hkfJM6+plpAMfV3TwJwbKlfrHjARNabH&#xa;Lb67fJgQun4eR7LHpkY1iqud11G/JncCfFKbSLycmoBmqWQoaJsqRo6aiZ5pjDLr&#xa;hf+A6jY0hTODWgeFKCqw4+TY49aSZvTarpmM4Crc650+BFG4yP+C8o9DKIFFGT2p&#xa;dGRNLNe+0uh0eju+hbeUsebvlq0gxmy2KVoE5z//9ITuAnQI/R2HNuF/ES0zLizN&#xa;oJ99w5YM1r7LAgMBAAGjJDAiMAsGA1UdDwQEAwIEMDATBgNVHSUEDDAKBggrBgEF&#xa;BQcDATANBgkqhkiG9w0BAQUFAAOCAQEAijdPVhGwDTm3SKnh7HoTCmuwWR+AEKRE&#xa;pOJSRimaaD/pt2k0uwKauPfUj6Mx4mbJ8/B5NeNeshDuSzRVP/jP6f0s1c4LrWQd&#xa;dgPDhIj6hp5osYNNah5+MvB5HJ2GI6CmsC1b5eNIkRG3CAUsWxZAMavv3fmfZiFB&#xa;ESC1dZWmMXsFi51HRzTfuTa1P5aVLaHv/2lnwlkJfQqIDDA02ro1wuIwl5D6sxFj&#xa;Ce29IDY31UkERq+YAapPSBy3VWMML5+jPWQ1YvZXU+XFJDT1ZFKotEbTr5vaaviP&#xa;n9lncyx1tfvsr4JzpPDD8QOU2A2n0n3tWqD/SVeRjQpul/R84XgPbA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=WHOTHIS.TEST03.COM.PH&#xa;Issuer: commonName=WHOTHIS.TEST03.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2025-10-17T06:31:57&#xa;Not valid after:  2026-04-18T06:31:57&#xa;MD5:     cad7 ca4b 57b0 03d6 65bb e82c 2b77 959b&#xa;SHA-1:   df07 0cf4 e73a 7344 76d0 abc7 8134 0fc0 13d9 b767&#xa;SHA-256: 28f3 e159 4135 fbf3 7c58 79a9 dfc5 69b5 09df 43fc 8161 2a42 2694 be9c 3114 53e3"><table key="subject">
+<elem key="commonName">WHOTHIS.TEST03.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">WHOTHIS.TEST03.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">9C20457CC58B7CD0B664B08C4A3E8CA89C6AB4A17248C9414F867195D60C7010C9E425EA43CE4FF62616E3A806664F424EB9FC08B09773AC80C7700F76A48B4C689FF91B5BF3C60CB144F450A033B61F90E93EB5C00535DB3DEDBD6A0843BDA546D5B9EFBE1FA52670ABD71A767D42D491BECBA74B9DEB0A641CD5284E95EBE8FBDDDF96FA8B774D5485CA44EC3B5D204640D949D5794E387FDF3EFDB1C7444760BC7E53F2170085D9489BFD55FD0793235C6E3FF4B76C9F6782D70D46BC0BEA73C8D9A195F144714A4F86A66BE75C2D999461472D830582831592BDDD790620349A4D459737E9C625A5FDEC981462F26CD7D984E925A6DA45F47B8F9AFCB497</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-10-17T06:31:57</elem>
+<elem key="notAfter">2026-04-18T06:31:57</elem>
+</table>
+<elem key="md5">cad7ca4b57b003d665bbe82c2b77959b</elem>
+<elem key="sha1">df070cf4e73a734476d0abc781340fc013d9b767</elem>
+<elem key="sha256">28f3e1594135fbf37c5879a9dfc569b509df43fc81612a422694be9c311453e3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC9DCCAdygAwIBAgIQcW4neCXozptK0eGkB7/NYDANBgkqhkiG9w0BAQUFADAj&#xa;MSEwHwYDVQQDExhEQldBUkVIT1VTRS5VU0IwOS5DT00uUEgwHhcNMjUxMDE3MDYz&#xa;MTU3WhcNMjYwNDE4MDYzMTU3WjAjMSEwHwYDVQQDExhEQldBUkVIT1VTRS5VU0Iw&#xa;OS5DT00uUEgwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCcIEV8xYt8&#xa;0LZksIxKPoyonGq0oXJIyUFPhnGV1gxwEMnkJepDzk/2JhbjqAZmT0JOufwIsJdz&#xa;rIDHcA92pItMaJ/5G1vzxgyxRPRQoDO2H5DpPrXABTXbPe29aghDvaVG1bnvvh+l&#xa;JnCr1xp2fULUkb7Lp0ud6wpkHNUoTpXr6Pvd35b6i3dNVIXKROw7XSBGQNlJ1XlO&#xa;OH/fPv2xx0RHYLx+U/IXAIXZSJv9Vf0HkyNcbj/0t2yfZ4LXDUa8C+pzyNmhlfFE&#xa;cUpPhqZr51wtmZRhRy2DBYKDFZK93XkGIDSaTUWXN+nGJaX97JgUYvJs19mE6SWm&#xa;2kX0e4+a/LSXAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQE&#xa;AwIEMDANBgkqhkiG9w0BAQUFAAOCAQEAmQgeqeIBi/pJi4r19IEhja+BtioKAOoy&#xa;TlgAiMfWqGLGO3BjqpOQ2u5xKAC22tXxL8EFPGA48tZKevRU/nZ63c64OSRW2e+x&#xa;qmWrp3xALcqdgPXhku/Y9jvDQtAkxi8luwmktlFM4XgiSx8QVCV8pQsNaT0tHlMj&#xa;fJdL2WETEcfU7z571FDH5YQ/m3Oo6fK2YJbfr4lIf3XCe1HVAgMY5YDS1h4+vpOh&#xa;0Q5nOZTlGi4kRjz+BZygXLKOTGtbFFzWi6yVyFen+aTjki/m7X4zAy/vhtzZ7Z6j&#xa;dcFGdZdnPGBcgfd5TIhiGL/myuTJIHOqPWagNwBA4gMx/VUwu4GxrA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="1334" rttvar="2257" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.9.177" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-sql-s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-11-27T02:18:37&#xa;Not valid after:  2055-11-27T02:18:37&#xa;MD5:     9a75 fccc d197 12b4 d98b 0c04 85cc 4b7a&#xa;SHA-1:   dacc a37c a37a 6f22 4981 00fd 31e7 80b3 6a22 4e1d&#xa;SHA-256: ae8a a640 7c92 b72d 479c 8166 d7f7 a24f 9c0d e590 768e 2183 70a2 e625 27e8 6e74"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">A3F8E278B8B840C31F5917A77C39A4B229B18A56D53A9805976B51DBFB23CF1794657D94D7C315BD8CE6A6A1D1B387C5F4D7257481688820862461904844473DA513F618B1B585706BCE85DA00AA047183F90D630CECE87D23500BC78A6A71F28AC9530BBD2BFE8A8A7F80AEFF66A6869EBDFDE89257B9014DEC791BF90D98B42BB718A9BBE138C057F2DEB1B1044750A31BD61FE0B680BCE7006E24BB9C9A5E94EBF75D045A940AECED331DE699715DC3593DB336763F56DE4E2661F65C1F22810F68BE1069B48002A4EBCCEC185377642AE9637EF4916C5ECF4AE1153532A7C45ECB59E2F31827B96ABF333888192F50CB09165EB21E1781E3B7A6C2A27159</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-11-27T02:18:37</elem>
+<elem key="notAfter">2055-11-27T02:18:37</elem>
+</table>
+<elem key="md5">9a75fcccd19712b4d98b0c0485cc4b7a</elem>
+<elem key="sha1">dacca37ca37a6f22498100fd31e780b36a224e1d</elem>
+<elem key="sha256">ae8aa6407c92b72d479c8166d7f7a24f9c0de590768e218370a2e62527e86e74</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDADCCAeigAwIBAgIQbkIGM/If5oVKbBaHV/f0VzANBgkqhkiG9w0BAQsFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjUxMTI3MDIxODM3WhgPMjA1NTExMjcwMjE4MzdaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKP44ni4&#xa;uEDDH1kXp3w5pLIpsYpW1TqYBZdrUdv7I88XlGV9lNfDFb2M5qah0bOHxfTXJXSB&#xa;aIgghiRhkEhERz2lE/YYsbWFcGvOhdoAqgRxg/kNYwzs6H0jUAvHimpx8orJUwu9&#xa;K/6Kin+Arv9mpoaevf3okle5AU3seRv5DZi0K7cYqbvhOMBX8t6xsQRHUKMb1h/g&#xa;toC85wBuJLucml6U6/ddBFqUCuztMx3mmXFdw1k9szZ2P1beTiZh9lwfIoEPaL4Q&#xa;abSAAqTrzOwYU3dkKuljfvSRbF7PSuEVNTKnxF7LWeLzGCe5ar8zOIgZL1DLCRZe&#xa;sh4XgeO3psKicVkCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAOaFhOlyIIgobMe4v&#xa;UcIhs5+Amxij5RFImlrPH/NVPgshaDHnkAhO8rIyvOIQl+niaPkRkRIjImwHLGqa&#xa;qe8aVQZP+EiHIp44qeTS8RskGMQZI1+K/BWREaVNZneugHzsoZz2n5uH0PpVLtjU&#xa;k/YwI0LrRiotaQamcQxqLezIpQSFRusdINJoLXGdV+6VH1RXKXtSW9EXN7YCGZZQ&#xa;xJfQ5pfIuroPWD5hKycAd5z3HOLWdZ9WpbCReJ3JDV09PpYFhkVc2lQ4w/6xbIqg&#xa;NRcHkdrWMNTw2aET+PEprjdCv9t+avRLBVArBTa1L10eEESSnhTQbWqe8B9Of+f2&#xa;dsW1Zg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=test_srv2&#xa;Issuer: commonName=test_srv2&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-11-26T02:18:26&#xa;Not valid after:  2026-05-28T02:18:26&#xa;MD5:     962b 2117 ea91 1a13 dbef 0516 fd7d 642f&#xa;SHA-1:   b616 2a42 f982 aed1 aa07 a90a 478a 8b7f b8a5 8e15&#xa;SHA-256: fa4f 78b1 8aae fb6b 4821 e08c 548b 2924 a5a3 3d22 2bbb 9d16 081e 68e0 471f 8ff5"><table key="subject">
+<elem key="commonName">test_srv2</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">test_srv2</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B702A8EE58210C67C4FB995E31FC81A82DB2FFEB2B69FA412161C4A485C1C12A9BFE51E7F548A1F656B220A7D9E05540617E581ECDCC0C116D7DAF6035250545CED92C291A54CDFE73B211A3CE8E2A192C6EFB28EC5A5C6D8E4F27A6A47A568287E5438062D8A941999F1BCF929EE1D190AD69C7C69B063CD60A58F8A7F1EBF4343FA1D20996425F12B7AD16FD7405F406E71B31FEFE0498E45A2909021929ED8C2BFB09013E852F978437CDC07447357C361E365583FC407A9E8D8B601A6F7276C4EF73C30B7CA01F9A62005243B5368A539045235CD693B9FEA745A5312949AB210313CA3D7BD216B451F213FAF85E7DC6C981D7B145266A83D54BB7597A23</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-11-26T02:18:26</elem>
+<elem key="notAfter">2026-05-28T02:18:26</elem>
+</table>
+<elem key="md5">962b2117ea911a13dbef0516fd7d642f</elem>
+<elem key="sha1">b6162a42f982aed1aa07a90a478a8b7fb8a58e15</elem>
+<elem key="sha256">fa4f78b18aaefb6b4821e08c548b2924a5a33d222bbb9d16081e68e0471f8ff5</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4DCCAcigAwIBAgIQSqRR33Oh2KVCNOlVpJQATzANBgkqhkiG9w0BAQsFADAZ&#xa;MRcwFQYDVQQDEw5TUUF0ZXN0c2VydmVyMTAeFw0yNTExMjYwMjE4MjZaFw0yNjA1&#xa;MjgwMjE4MjZaMBkxFzAVBgNVBAMTDlNRQXRlc3RzZXJ2ZXIxMIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtwKo7lghDGfE+5leMfyBqC2y/+srafpBIWHE&#xa;pIXBwSqb/lHn9Uih9layIKfZ4FVAYX5YHs3MDBFtfa9gNSUFRc7ZLCkaVM3+c7IR&#xa;o86OKhksbvso7FpcbY5PJ6akelaCh+VDgGLYqUGZnxvPkp7h0ZCtacfGmwY81gpY&#xa;+Kfx6/Q0P6HSCZZCXxK3rRb9dAX0BucbMf7+BJjkWikJAhkp7Ywr+wkBPoUvl4Q3&#xa;zcB0RzV8Nh42VYP8QHqejYtgGm9ydsTvc8MLfKAfmmIAUkO1NopTkEUjXNaTuf6n&#xa;RaUxKUmrIQMTyj170ha0UfIT+vhefcbJgdexRSZqg9VLt1l6IwIDAQABoyQwIjAT&#xa;BgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQAD&#xa;ggEBALToy8IJEB/6aGXq2yqKhBJOv/uo0IkrWJIkAzyCAP/FYnEdBt5jf/dqRcUw&#xa;ID3FgWSr/5lLR3Sg6IhrHnz2H7gKOUnSIghwjZSVaNGMy6eJlArdJBqKizblTcet&#xa;88VlkaBsqwQCDGxgv4rMC6HFKYvJzC6k5PLSVsHgcBQySjE4SfKjo1P65lPaGdbV&#xa;K6hY5C64spwisIl8qu6wCGoYGHUSsnjDqSCUnuFyH3nHKAJVsuA6IFYN8iILF+Mo&#xa;siCykruZo9NAlJGoWN7jEQg4lU3Mu3xuKap1l24XCoRNC0uU5+jroKtvCfZlvbiN&#xa;IMYS4Z18mlguLNY7BZVyNTiCfPg=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="closed" reason="reset" reason_ttl="126"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="1316" rttvar="2218" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.9.40" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ms-sql-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDK02CL01.TEST.COM.PH&#xa;Issuer: commonName=IDK02CL01.TEST.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-01-23T16:00:41&#xa;Not valid after:  2026-07-25T16:00:41&#xa;MD5:     0362 f3b3 7bd9 463b 653d 66d5 c735 024b&#xa;SHA-1:   0e82 9b54 a51e 531d 65b2 4f60 360c 4074 065c 0cbe&#xa;SHA-256: 8415 ffcf 8089 e01c 8283 8571 e178 bbb9 1e26 a543 7c6e 0dcd 3878 542b c9ef 7424"><table key="subject">
+<elem key="commonName">IDK02CL01.TEST.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDK02CL01.TEST.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BFF8B51650362D34BF0DBB566383937F7B0585B2AE3928B1E8896BD8414A7021FC9B7D33A56C234A024E7956CC6DE2088B5A50C59EAF4EF02D68F358F8A9763586221DCEBE30765538BAB2E933D48CEC7DE0549F9360BB305BCAD718B0499E8EDA623C4B86BE866B4413B9BD7A00B79E2C0A7797DC459923002EDF267C39EF8A64A5B76AFF4FBED7ADDCD81BB431BD99D98E1124A096A2BCD467B66894D80A89ADDA00798BF65992FAF3C16ACE9702E8790CD03253C36D8554719319151724B9AD04A6B0AD60EC2C360E04AB3BED3F5D0B8037D1A8447C9069D745F2A3F81C701969D1B0876ACC8D1B4149A374B0BBAF9C39306C4AAB1A23AB03E388E4ED9E79</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-01-23T16:00:41</elem>
+<elem key="notAfter">2026-07-25T16:00:41</elem>
+</table>
+<elem key="md5">0362f3b37bd9463b653d66d5c735024b</elem>
+<elem key="sha1">0e829b54a51e531d65b24f60360c4074065c0cbe</elem>
+<elem key="sha256">8415ffcf8089e01c82838571e178bbb91e26a5437c6e0dcd3878542bc9ef7424</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC8DCCAdigAwIBAgIQVR4LeOe6zJxFB6qEhx2OazANBgkqhkiG9w0BAQsFADAh&#xa;MR8wHQYDVQQDExZVU0JBRENMMDEuVVNCMDguQ09NLlBIMB4XDTI2MDEyMzE2MDA0&#xa;MVoXDTI2MDcyNTE2MDA0MVowITEfMB0GA1UEAxMWVVNCQURDTDAxLlVTQjA4LkNP&#xa;TS5QSDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL/4tRZQNi00vw27&#xa;VmODk397BYWyrjkoseiJa9hBSnAh/Jt9M6VsI0oCTnlWzG3iCItaUMWer07wLWjz&#xa;WPipdjWGIh3OvjB2VTi6sukz1IzsfeBUn5NguzBbytcYsEmejtpiPEuGvoZrRBO5&#xa;vXoAt54sCneX3EWZIwAu3yZ8Oe+KZKW3av9Pvtet3NgbtDG9mdmOESSglqK81Ge2&#xa;aJTYComt2gB5i/ZZkvrzwWrOlwLoeQzQMlPDbYVUcZMZFRckua0EprCtYOwsNg4E&#xa;qzvtP10LgDfRqER8kGnXRfKj+BxwGWnRsIdqzI0bQUmjdLC7r5w5MGxKqxojqwPj&#xa;iOTtnnkCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQw&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQBAzmQe2EWio3GcfPC1sUjlVpR+QZxvhczcnZ//&#xa;Co2xKe0eCi6vTUNF79ofcxgEbtlmS0Dhm8dD5YsfmLInoXgEDkhuRp40iDljreNo&#xa;prhJd5ELGPQgNxH2Ir/NMbtge02zKqwOCL5yDvU1awGefKP7VWKNYNT6JhVpX3hV&#xa;YzcdppUPZMZ014pP2rkYUKSwWTZhRwxVX0Jejlxn+CPRCwKssMkFyTN1TKGM5tas&#xa;fsiS1w58EiNOtyNzSwoJ394PbDpZdRWfmUyEWFWWjwczck3qqHPR8h/MwHdYZyIp&#xa;cB7vfsIUfUETR2Jb6Bo2MC1S6UQ7JckngwTj3sTky0ZMZwWd&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="1536" rttvar="3778" to="100000"/>
+</host>
+<host starttime="1770697913" endtime="1770697943"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="155.120.9.44" addrtype="ipv4"/>
+<hostnames>
+<hostname name="IDK01.TEST.COM.PH" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="1433"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ms-sql-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=IDK01.TEST.COM.PH&#xa;Issuer: commonName=IDK01.TEST.COM.PH&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-01-23T03:59:13&#xa;Not valid after:  2026-07-25T03:59:13&#xa;MD5:     afd8 5c37 dbae b928 bb07 a88e 3f01 783e&#xa;SHA-1:   277c ff33 a20f e814 62f8 a3a6 999e 3405 31b1 6746&#xa;SHA-256: b1c7 9de0 5389 9015 dfa0 9b3e 24ac 285d 3f55 55b5 5044 72a0 9fbe 6c57 3ec9 366f"><table key="subject">
+<elem key="commonName">IDK01.TEST.COM.PH</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">IDK01.TEST.COM.PH</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C66B382D161D78CF6EC1102C077F3EA842A5A29FC024E64ABF2702E96A2C017D0FDE0828FB6B38027462D532AF549875DCB126CE34353AF6F71F77B29353C0CD158F7AA0EBFEFA18326CA1316DF502A9263E7B910910E8C6B0FF98C4DC7D328EF1F41B28454C634472D5C806F29D5082FAB25453AF8714DAD407DA4ED3945A00698D943CBFAE6686B9248171C60829F945811D72F0142491B891DA343B7F3CA953878EE235E8DC5E95DAA6E1996EF7824E57F3D9193F24FDDA4AC1E2914ED7455D51C9F71527E8E606BD69B4E95EEB78FEACB4FD2BC190AD0B21968815860F1C57C7D3D1566C9B044442B1C1D0E3C603FA2A51F5A18B24051952CB7EEFFE96AD</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-01-23T03:59:13</elem>
+<elem key="notAfter">2026-07-25T03:59:13</elem>
+</table>
+<elem key="md5">afd85c37dbaeb928bb07a88e3f01783e</elem>
+<elem key="sha1">277cff33a20fe81462f8a3a6999e340531b16746</elem>
+<elem key="sha256">b1c79de053899015dfa09b3e24ac285d3f5555b5504472a09fbe6c573ec9366f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC8DCCAdigAwIBAgIQN95Rs0dyXotGAaRcr5A5xzANBgkqhkiG9w0BAQsFADAh&#xa;MR8wHQYDVQQDExZVU0JBRENMMDIuVVNCMDguQ09NLlBIMB4XDTI2MDEyMzAzNTkx&#xa;M1oXDTI2MDcyNTAzNTkxM1owITEfMB0GA1UEAxMWVVNCQURDTDAyLlVTQjA4LkNP&#xa;TS5QSDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMZrOC0WHXjPbsEQ&#xa;LAd/PqhCpaKfwCTmSr8nAulqLAF9D94IKPtrOAJ0YtUyr1SYddyxJs40NTr29x93&#xa;spNTwM0Vj3qg6/76GDJsoTFt9QKpJj57kQkQ6Maw/5jE3H0yjvH0GyhFTGNEctXI&#xa;BvKdUIL6slRTr4cU2tQH2k7TlFoAaY2UPL+uZoa5JIFxxggp+UWBHXLwFCSRuJHa&#xa;NDt/PKlTh47iNejcXpXapuGZbveCTlfz2Rk/JP3aSsHikU7XRV1RyfcVJ+jmBr1p&#xa;tOle63j+rLT9K8GQrQshlogVhg8cV8fT0VZsmwREQrHB0OPGA/oqUfWhiyQFGVLL&#xa;fu/+lq0CAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQw&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQBZV9ODsdRuKoxnH34XD0VQSQWHmcPb5sJJuByo&#xa;t3ZIlkVCxq/FOuYL1+LKCs1HIC4d0oQIsBDrc/MSZpBx7N+Tx9ALFuIN+l6POoUE&#xa;x/tNW4oe4z3WnN2cgP7oYyMOXvIMPGk/iiYy1y8MchQaELXhQu6RSP+ELZFfC/BF&#xa;fyoIXRmaTaVke7jNdGZaGP1CJmtmeS5okDoQmw6SVUY+IW8YxGyq21lqZpo3lt5s&#xa;+SBNNsD75bxxcmsJK6ddjXwtj7aI0z9bN+Rbjd8WAvDcxi0R9Mr5Y0K2+hKuhu8I&#xa;qIrtq9U9UHb2WbUv7kI1+wHtbDcNkaAe6XgNQdhTS80RMCpM&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="7777"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="cbt" method="table" conf="3"/></port>
+</ports>
+<times srtt="4921" rttvar="4946" to="100000"/>
+</host>
+<runstats><finished time="1770697943" timestr="Mon Feb  9 23:32:23 2026" summary="Nmap done at Mon Feb  9 23:32:23 2026; 20 IP addresses (20 hosts up) scanned in 35.01 seconds" elapsed="35.01" exit="success"/><hosts up="20" down="0" total="20"/>
+</runstats>
+</nmaprun>

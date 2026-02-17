@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 import csv
 import argparse
 import re
+import os  # Added for file checking
 
 def get_visible_len(text):
     """Calculates length of string without ANSI escape codes."""
@@ -13,6 +14,14 @@ def get_protocol_weight(proto):
     return weights.get(proto.replace(" ", ""), 0)
 
 def parse_nmap_matrix(xml_file, csv_file=None):
+    # --- FILE GUARD START ---
+    if csv_file and os.path.exists(csv_file):
+        response = input(f" [!] File '{csv_file}' already exists. Overwrite? (y/N): ").lower()
+        if response != 'y':
+            print("[*] Operation cancelled by user.")
+            return
+    # --- FILE GUARD END ---
+
     try:
         tree = ET.parse(xml_file)
         root = tree.getroot()
@@ -20,7 +29,6 @@ def parse_nmap_matrix(xml_file, csv_file=None):
         print(f"Error reading XML: {e}")
         return
 
-    # Updated headers to include support protocols
     headers = ['IP', 'Port', 'Max Protocol', 'SSLv3', 'TLSv1.0', 'TLSv1.1', 'TLSv1.2', 'SWEET32', 'Bar Mitzvah', 'POODLE']
     rows = []
 
@@ -32,7 +40,7 @@ def parse_nmap_matrix(xml_file, csv_file=None):
             script = port.find('script[@id="ssl-enum-ciphers"]')
             if script is None: continue
 
-            port_data = {h: "No" for h in headers}
+            port_data = {h: "no" for h in headers}
             port_data.update({'IP': ip, 'Port': port_id, 'Max Protocol': 'None'})
             
             current_max_weight = -1
@@ -40,17 +48,14 @@ def parse_nmap_matrix(xml_file, csv_file=None):
             for proto_table in script.findall('table'):
                 proto_name = proto_table.get('key').replace(" ", "")
                 
-                # Check Protocol Support
                 if proto_name in headers:
                     port_data[proto_name] = "YES"
                 
-                # Update Max Protocol
                 weight = get_protocol_weight(proto_name)
                 if weight > current_max_weight:
                     current_max_weight = weight
                     port_data['Max Protocol'] = proto_name
 
-                # Scan Warnings
                 warn_table = proto_table.find('table[@key="warnings"]')
                 if warn_table is not None:
                     for warning in warn_table.findall('elem'):
@@ -64,6 +69,10 @@ def parse_nmap_matrix(xml_file, csv_file=None):
 
             rows.append([port_data[h] for h in headers])
 
+    if not rows:
+        print("No SSL/TLS Ciphers data found in the provided XML.")
+        return
+
     if csv_file:
         with open(csv_file, 'w', newline='') as f:
             writer = csv.writer(f)
@@ -71,6 +80,7 @@ def parse_nmap_matrix(xml_file, csv_file=None):
             writer.writerows(rows)
         print(f"[*] Report saved to {csv_file}")
     else:
+        # (Table formatting logic remains the same)
         formatted_rows = []
         for row in rows:
             new_row = []

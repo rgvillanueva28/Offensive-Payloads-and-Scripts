@@ -1,4 +1,4 @@
-# SSL/TLS Matrix Parser
+# NMAP ssl-enum-ciphers Matrix
 
 A lightweight Python utility to convert complex Nmap `ssl-enum-ciphers` XML output into a clean, actionable compliance matrix. This tool helps auditors quickly identify which protocols are enabled and which specific vulnerabilities are present across a network.
 
@@ -10,6 +10,8 @@ A lightweight Python utility to convert complex Nmap `ssl-enum-ciphers` XML outp
 * **CSV Export:** Generate spreadsheet-ready reports via the `-o` flag.
 
 ## Extracted Columns
+
+>**NOTE**: Detections are what is observed only based on scan data of the developer. Do not rely solely on this tool if there are observed additional detection methods.
 
 | Column Title | Detection / Logic |
 | :--- | :--- |
@@ -34,14 +36,14 @@ nmap -p 443,1433,3389 --script ssl-enum-ciphers -oX scan_results.xml <target>
 **To display the table in the terminal:**
 
 ```bash
-python3 ssl-tls-matrix.py scan_results.xml
+python3 nmap-ssl-enum-ciphers-matrix.py scan_results.xml
 
 ```
 
 **To export to a CSV file:**
 
 ```bash
-python3 ssl-tls-matrix.py scan_results.xml -o audit_report.csv
+python3 nmap-ssl-enum-ciphers-matrix.py scan_results.xml -o audit_report.csv
 
 ```
 
