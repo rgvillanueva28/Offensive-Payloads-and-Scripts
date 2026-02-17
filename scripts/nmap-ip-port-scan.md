@@ -17,12 +17,10 @@ A flexible Bash utility designed to bypass Nmap's limitation of scanning specifi
 The input file should contain the target (IP or Hostname) followed by a space and the port number.
 
 ```text
-# Target           Port
 192.168.1.10       80
 192.168.1.15       443
 api.example.com    8443 8080 8081
 10.0.0.5           22
-
 ```
 
 ### 2. The Script (`nmap-ip-port-scan.sh`)
@@ -59,10 +57,10 @@ Run the script by providing the target file and your desired Nmap arguments insi
 
 ```
 
-**Aggressive scan with output saved to a file:**
+**Aggressive scan with output saved to an XML file:**
 
 ```bash
-./nmap-ip-port-scan.sh targets.txt "-A -T4 -oN output.txt"
+./nmap-ip-port-scan.sh targets.txt "-A -T4 -oX output.xml"
 
 ```
 
