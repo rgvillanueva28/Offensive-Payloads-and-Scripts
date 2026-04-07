@@ -1,0 +1,40 @@
+﻿IP,Port,Subject,Issuer,Untrusted,Self-Signed,Weak Hash,Wrong Host,Weak RSA Key,Max Protocol,SSLv3,TLSv1.0,TLSv1.1,TLSv1.2,SWEET32,Bar Mitzvah,POODLE,RDP Version,Enc Level,Med/Low Enc,Non-NLA Only,Non-FIPS,MITM Risk
+155.120.8.15,3389,commonName=IDKDEFATEWAY.TEST03.COM.PH,commonName=IDKDEFATEWAY.TEST03.COM.PH,YES,YES,YES,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,"RDP 5.x, 6.x, 7.x, or 8.x server",Client Compatible,YES,YES,YES,YES
+155.120.8.24,3389,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"RDP 5.x, 6.x, 7.x, or 8.x server",Client Compatible,YES,YES,YES,YES
+155.120.8.243,3389,commonName=IDKAMLDEV.TEST03.COM.PH,commonName=IDKAMLDEV.TEST03.COM.PH,YES,YES,YES,no,no,TLSv1.0,no,YES,no,no,YES,YES,no,"RDP 5.x, 6.x, 7.x, or 8.x server",Client Compatible,YES,YES,YES,YES
+155.120.8.244,3389,commonName=IDKAMLAHODB.TEST03.COM.PH,commonName=IDKAMLAHODB.TEST03.COM.PH,YES,YES,YES,no,no,-,-,-,-,-,-,-,-,N/A,N/A,Undetermined,Undetermined,Undetermined,Undetermined
+155.120.8.247,3389,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,"RDP 5.x, 6.x, 7.x, or 8.x server",Client Compatible,YES,YES,YES,YES
+155.120.9.13,3389,commonName=IDKHOAVSVR.TEST03.COM.PH,commonName=IDKHOAVSVR.TEST03.COM.PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+155.120.9.40,3389,commonName=IDK02CL01.TEST.COM.PH,commonName=IDK02CL01.TEST.COM.PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+155.120.9.170,3389,commonName=IDKNetMon.TEST.COM.PH,commonName=IDKNetMon.TEST.COM.PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+155.120.9.174,3389,commonName=IDKCICSH0.TEST03.COM.PH,commonName=IDKCICSH0.TEST03.COM.PH,YES,YES,YES,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,"RDP 5.x, 6.x, 7.x, or 8.x server",Client Compatible,YES,YES,YES,YES
+155.120.9.175,3389,commonName=WHOTHIS.TEST03.COM.PH,commonName=WHOTHIS.TEST03.COM.PH,YES,YES,YES,no,no,-,-,-,-,-,-,-,-,"RDP 5.x, 6.x, 7.x, or 8.x server",Client Compatible,YES,YES,YES,YES
+155.120.9.177,3389,commonName=test_srv2,commonName=test_srv2,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.30,3389,commonName=IDKTSM_SRV.TEST03.COM.PH,commonName=IDKTSM_SRV.TEST03.COM.PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.31,3389,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.32,3389,commonName=IDKABC_APP.TEST03.COM.PH,commonName=IDKABC_APP.TEST03.COM.PH,YES,YES,no,no,no,-,-,-,-,-,-,-,-,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.33,3389,commonName=IDKABC_APPtest.TEST03.COM.PH,commonName=IDKABC_APPtest.TEST03.COM.PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.34,3389,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.42,3389,commonName=IDKLOSDIGISMP_SRV_test,commonName=IDKLOSDIGISMP_SRV_test,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.50,3389,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.66,3389,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.77,3389,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.96,3389,commonName=IDKBASE60_SRV.TEST03.COM.PH,commonName=IDKBASE60_SRV.TEST03.COM.PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,RDP 10.2 server,Unknown,Undetermined,YES,Undetermined,Low Chance
+10.65.10.19,3389,commonName=IDKINTRANET_APP.TEST.COM.PH,commonName=IDKINTRANET_APP.TEST.COM.PH,YES,YES,no,no,no,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+10.65.10.20,1433,commonName=SSL_Self_Signed_Fallback,commonName=SSL_Self_Signed_Fallback,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,-,-,-,-,-,-
+10.65.10.20,3389,commonName=IDKLOSDIGISMP_SRV.TEST.COM.PH,commonName=IDKLOSDIGISMP_SRV.TEST.COM.PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,-,-,-,-,-,-
+10.65.10.22,3389,commonName=IDKSMP_APP.TEST.COM.PH,commonName=IDKSMP_APP.TEST.COM.PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,-,-,-,-,-,-
+10.65.10.30,1433,commonName=SSL_Self_Signed_Fallback,commonName=SSL_Self_Signed_Fallback,YES,YES,YES,no,YES,TLSv1.0,YES,YES,no,no,YES,YES,YES,-,-,-,-,-,-
+10.65.10.42,1433,commonName=IDKLOSDIGISMP_SRV_test/organizationName=Sample Company/stateOrProvinceName=Metro Manila/countryName=PH,commonName=IDKLOSDIGISMP_SRV_test/organizationName=Sample Company/stateOrProvinceName=Metro Manila/countryName=PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,-,-,-,-,-,-
+10.65.10.87,1433,commonName=SSL_Self_Signed_Fallback,commonName=SSL_Self_Signed_Fallback,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,-,-,-,-,-,-
+10.65.10.87,3389,commonName=IDKOLAPDB.TEST.COM.PH,commonName=IDKOLAPDB.TEST.COM.PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,-,-,-,-,-,-
+10.65.10.96,1433,commonName=SSL_Self_Signed_Fallback,commonName=SSL_Self_Signed_Fallback,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,-,-,-,-,-,-
+155.120.8.15,1433,commonName=SSL_Self_Signed_Fallback,commonName=SSL_Self_Signed_Fallback,YES,YES,YES,no,YES,TLSv1.0,YES,YES,no,no,YES,YES,YES,-,-,-,-,-,-
+155.120.8.243,1433,commonName=SSL_Self_Signed_Fallback,commonName=SSL_Self_Signed_Fallback,YES,YES,YES,no,YES,TLSv1.0,YES,YES,no,no,YES,YES,YES,-,-,-,-,-,-
+155.120.8.244,1433,commonName=SSL_Self_Signed_Fallback,commonName=SSL_Self_Signed_Fallback,YES,YES,YES,no,YES,TLSv1.0,YES,YES,no,no,YES,YES,YES,-,-,-,-,-,-
+155.120.8.49,1433,commonName=SSL_Self_Signed_Fallback,commonName=SSL_Self_Signed_Fallback,YES,YES,YES,no,YES,TLSv1.0,YES,YES,no,no,YES,YES,YES,-,-,-,-,-,-
+155.120.8.49,3389,commonName=IDKHRISHO,commonName=IDKHRISHO,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,-,-,-,-,-,-
+155.120.9.13,1433,commonName=SSL_Self_Signed_Fallback,commonName=SSL_Self_Signed_Fallback,YES,YES,YES,no,YES,TLSv1.0,YES,YES,no,no,YES,YES,YES,-,-,-,-,-,-
+155.120.9.175,1433,commonName=WHOTHIS.TEST03.COM.PH,commonName=WHOTHIS.TEST03.COM.PH,YES,YES,YES,no,no,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+155.120.9.177,1433,commonName=SSL_Self_Signed_Fallback,commonName=SSL_Self_Signed_Fallback,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,-,-,-,-,-,-
+155.120.9.44,3389,commonName=IDK01.TEST.COM.PH,commonName=IDK01.TEST.COM.PH,YES,YES,no,no,no,TLSv1.2,no,YES,YES,YES,YES,YES,no,-,-,-,-,-,-
