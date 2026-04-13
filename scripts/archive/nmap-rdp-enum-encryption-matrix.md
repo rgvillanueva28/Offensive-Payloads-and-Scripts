@@ -40,6 +40,8 @@ The **MITM Risk** column is calculated from the combination of RDP protocol vers
 
 ## Usage
 
+> You may use the xml files on `./examples` for testing
+
 ### 1. Generate Nmap Data
 
 First, scan your targets using Nmap with the `rdp-enum-encryption` script and save the output to XML:
