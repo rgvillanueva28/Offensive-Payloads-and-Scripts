@@ -187,25 +187,42 @@ def parse_rdp_enum_encryption(script_output):
 
             if text_lower == "security layer":
                 in_security = True
-            elif text_lower.startswith("rdp encryption level:"):
-                enc_level_value = text.split(":", 1)[1].strip()
+            elif text_lower.startswith("rdp encryption level"):
+                # Handle both "RDP Encryption Level: X" and "RDP Encryption Level X"
+                if ":" in text:
+                    enc_level_value = text.split(":", 1)[1].strip()
+                else:
+                    enc_level_value = text[len("RDP Encryption Level") :].strip()
             elif text_lower.startswith("rdp protocol version:"):
                 rdp_version = text.split(":", 1)[1].strip()
         else:
             if in_security:
                 security_children.append(text_lower)
 
-    if not enc_level_value:
+    enc_level_rank = {
+        "none": 0,
+        "low": 1,
+        "client compatible": 2,
+        "high": 3,
+        "fips compliant": 4,
+    }
+
+    enc_norm = enc_level_value.lower().strip() if enc_level_value else ""
+    enc_rank = enc_level_rank.get(enc_norm)
+
+    if enc_rank is None:
         enc_med_low = "Undetermined"
-    elif enc_level_value.lower() in ("high", "fips compliant"):
-        enc_med_low = "no"
-    else:
+    elif enc_rank < 3:
         enc_med_low = "YES"
+    else:
+        enc_med_low = "no"
 
     has_security_section = bool(security_children)
     native_rdp_success = any("native rdp: success" in l for l in security_children)
     ssl_success = any(l.startswith("ssl:") and "success" in l for l in security_children)
 
+    # Non-NLA Only:
+    # YES if Native RDP or SSL succeeds (even if other methods also succeed)
     if not has_security_section:
         non_nla = "Undetermined"
     elif native_rdp_success or ssl_success:
@@ -213,9 +230,9 @@ def parse_rdp_enum_encryption(script_output):
     else:
         non_nla = "no"
 
-    if not enc_level_value:
+    if enc_rank is None:
         non_fips = "Undetermined"
-    elif enc_level_value.lower() == "fips compliant":
+    elif enc_rank == 4:
         non_fips = "no"
     else:
         non_fips = "YES"
